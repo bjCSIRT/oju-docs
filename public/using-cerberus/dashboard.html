@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dashboard Walkthrough :: Cerberus</title>
+    <meta name="description" content="Complete guide to the Cerberus monitoring dashboard">
+    <meta name="keywords" content="dashboard, real-time, monitoring, statistics, alerts, entities">
+    <meta name="generator" content="Antora 3.1.10">
+    <link rel="stylesheet" href="../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="..">Cerberus</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ROOT" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Cerberus</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../what-is-cerberus/what-is-cerberus.html">What is Cerberus?</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-cerberus/key-features.html">Key Features</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-cerberus/architecture-overview.html">Architecture Overview</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../installing/installing.html">Installing Cerberus</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/quick-install.html">Quick Install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/config-file.html">Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/first-launch.html">First Launch</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="using.html">Using Cerberus</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="dashboard.html">Dashboard Walkthrough</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="entity.html">Entity Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="alerts.html">Alerts Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="scan.html">Scan Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="logs-audit.html">Logs &amp; Audit Trail</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="user-management.html">User Management &amp; Roles</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="system_administration.html">System administration</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../integrations/integration.html">Integrations</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/rtir.html">RTIR</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/virustotal.html">VirusTotal</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/cerebrate.html">Cerebrate</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../contribute-support/contribute.html">Contribute &amp; Support</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/reporting-bugs.html">Reporting Bugs</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/features-request.html">Feature Requests</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/how-to-contribute.html">How to contribute ?</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cerberus</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">Cerberus</a></div>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Cerberus</a></li>
+    <li><a href="using.html">Using Cerberus</a></li>
+    <li><a href="dashboard.html">Dashboard Walkthrough</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///home/analyst/Documents/wiki_cerberus/docs-site/cerberus/./modules/ROOT/pages/using-cerberus/dashboard.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Dashboard Walkthrough</h1>
+<div class="sect1">
+<h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Cerberus Dashboard provides a comprehensive real-time monitoring interface with seven key components, some of which update automatically every 60 seconds. This walkthrough explains each section and how to effectively use the dashboard for security monitoring and incident response.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dashboard_components"><a class="anchor" href="#_dashboard_components"></a>Dashboard Components</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_1_system_statistics"><a class="anchor" href="#_1_system_statistics"></a>1. System Statistics</h3>
+<div class="paragraph">
+<p><strong>Purpose:</strong> Growth metrics for monitored entities and platforms</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/using-cerberus/dashboard_statistiques.png" alt="dashboard statistiques">
+</div>
+<div class="title">Figure 1. Alerts statistiques</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_2_todays_alerts_per_categories"><a class="anchor" href="#_2_todays_alerts_per_categories"></a>2. Today&#8217;s Alerts per Categories</h3>
+<div class="paragraph">
+<p><strong>Purpose:</strong> Current day alert distribution by security issues type</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/using-cerberus/dashboard_per_categories.png" alt="dashboard per categories">
+</div>
+<div class="title">Figure 2. Alerts per categories</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_todays_alerts_by_status"><a class="anchor" href="#_3_todays_alerts_by_status"></a>3. Today&#8217;s Alerts by Status</h3>
+<div class="paragraph">
+<p><strong>Purpose:</strong> Processing status of current day alerts</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/using-cerberus/dashboard_alerts_status.png" alt="dashboard alerts status">
+</div>
+<div class="title">Figure 3. Alerts by status</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_most_impacted_entities"><a class="anchor" href="#_4_most_impacted_entities"></a>4. Most Impacted Entities</h3>
+<div class="paragraph">
+<p><strong>Purpose:</strong> Historical analysis of the 10 entities most affected by security issues over the past 12 months</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/using-cerberus/dashboard_entities.png" alt="dashboard entities">
+</div>
+<div class="title">Figure 4. Most impacted entities</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_5_cases_by_categories_all_time"><a class="anchor" href="#_5_cases_by_categories_all_time"></a>5. Cases by Categories (All Time)</h3>
+<div class="paragraph">
+<p><strong>Purpose:</strong> Historical alert volume analysis by categories</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/using-cerberus/dashboard_categories.png" alt="dashboard categories">
+</div>
+<div class="title">Figure 5. Alerts by categories</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_6_entity_specific_case_analysis"><a class="anchor" href="#_6_entity_specific_case_analysis"></a>6. Entity-Specific Case Analysis</h3>
+<div class="paragraph">
+<p><strong>Purpose:</strong> Organization-focused analysis showing security issues breakdown by type</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/using-cerberus/dashboard_per_entity.png" alt="dashboard per entity">
+</div>
+<div class="title">Figure 6. Alerts per entity</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_7_recent_activity_feed"><a class="anchor" href="#_7_recent_activity_feed"></a>7. Recent Activity Feed</h3>
+<div class="paragraph">
+<p><strong>Purpose:</strong> Real-time incident tracking (Last 10 alerts)</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/using-cerberus/dashboard_10_alerts.png" alt="dashboard 10 alerts">
+</div>
+<div class="title">Figure 7. Last 10 alerts</div>
+</div>
+<div class="paragraph">
+<p>The Dashboard Walkthrough provides the foundation for effective real-time security monitoring, enabling rapid incident detection, assessment, and coordinated response across your monitored organizations and platforms.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<script id="site-script" src="../_/js/site.js" data-ui-root-path="../_"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>First Launch :: Cerberus</title>
+    <meta name="description" content="Premiers pas et vérifications après installation de Cerberus">
+    <meta name="keywords" content="first-launch, verification, setup, dashboard, admin">
+    <meta name="generator" content="Antora 3.1.10">
+    <link rel="stylesheet" href="../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="..">Cerberus</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ROOT" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Cerberus</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../what-is-cerberus/what-is-cerberus.html">What is Cerberus?</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-cerberus/key-features/key-features.html">Key Features</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-cerberus/architecture-overview.html">Architecture Overview</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="installing.html">Installing Cerberus</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="quick-install.html">Quick Install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="config-file.html">Configuration File</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="first-lauch.html">First Launch</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../using-cerberus/using.html">Using Cerberus</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/dashboard.html">Using Cerberus</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/entity.html">Entity Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/alerts.html">Alerts Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/scan.html">Scan Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/logs-audit.html">Logs &amp; Audit Trail</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/user-management.html">User Management &amp; Roles</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/vendors.html">Vendor Integrations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/ui-components.html">UI Components</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../integrations/integration.html">Integrations</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/external-connectors.html">Integrations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/customs-integrations.html">Custom Integrations Guide</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../contribute-support/contribute.html">Contribute &amp; Support</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/reporting-bugs.html">Reporting Bugs</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/features-request.html">Feature Requests</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/how-to-contribute.html">How to contribute ?</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cerberus</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">Cerberus</a></div>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Cerberus</a></li>
+    <li><a href="installing.html">Installing Cerberus</a></li>
+    <li><a href="first-lauch.html">First Launch</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///home/analyst/Documents/wiki_cerberus/docs-site/cerberus/./modules/ROOT/pages/installing/first-lauch.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">First Launch</h1>
+<div class="sect1">
+<h2 id="_vue_densemble"><a class="anchor" href="#_vue_densemble"></a>Vue d&#8217;ensemble</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Guide de vérification et configuration initiale après l&#8217;installation de Cerberus. Ces étapes garantissent le bon fonctionnement de la plateforme avant de commencer la surveillance de vos entités.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_vérifications_système"><a class="anchor" href="#_vérifications_système"></a>Vérifications système</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_statut_des_services"><a class="anchor" href="#_statut_des_services"></a>Statut des services</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Vérifier que tous les conteneurs fonctionnent
+docker-compose ps
+
+# Résultat attendu : tous les services "Up"
+#   Name                 State    Ports
+# cerberus_backend     Up       8000/tcp
+# cerberus_frontend    Up       3000/tcp
+# cerberus_nginx       Up       80/tcp, 443/tcp
+# cerberus_postgres    Up       5432/tcp
+# cerberus_redis       Up       6379/tcp
+# cerberus_celery_*    Up</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_test_de_connectivité"><a class="anchor" href="#_test_de_connectivité"></a>Test de connectivité</h3>
+<div class="paragraph">
+<p><strong>Accès HTTPS</strong> :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Tester l'accès à l'application
+curl -I https://votre-domaine.com
+
+# Réponse attendue : HTTP/2 200
+# Avec headers sécurité (HSTS, etc.)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Vérification certificat SSL</strong> :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Contrôler la validité du certificat
+openssl s_client -connect votre-domaine.com:443 -servername votre-domaine.com
+
+# Vérifier la date d'expiration
+echo | openssl s_client -connect votre-domaine.com:443 -servername votre-domaine.com 2&gt;/dev/null | openssl x509 -noout -dates</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_accès_aux_interfaces"><a class="anchor" href="#_accès_aux_interfaces"></a>Accès aux interfaces</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_interface_principale"><a class="anchor" href="#_interface_principale"></a>Interface principale</h3>
+<div class="paragraph">
+<p><strong>URL</strong> : <code><a href="https://votre-domaine.com" class="bare">https://votre-domaine.com</a></code></p>
+</div>
+<div class="paragraph">
+<p><strong>Première connexion</strong> :
+1. Ouvrir le navigateur sur votre domaine
+2. Vérifier l&#8217;absence d&#8217;erreur SSL
+3. Page de connexion doit s&#8217;afficher</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_interface_dadministration_django"><a class="anchor" href="#_interface_dadministration_django"></a>Interface d&#8217;administration Django</h3>
+<div class="paragraph">
+<p><strong>URL</strong> : <code><a href="https://votre-domaine.com/admin" class="bare">https://votre-domaine.com/admin</a></code></p>
+</div>
+<div class="paragraph">
+<p><strong>Connexion administrateur</strong> :
+1. Utiliser les identifiants créés lors de l&#8217;installation
+2. Interface Django admin doit être accessible
+3. Menu de gestion visible</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuration_initiale"><a class="anchor" href="#_configuration_initiale"></a>Configuration initiale</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_paramètres_de_site_django"><a class="anchor" href="#_paramètres_de_site_django"></a>Paramètres de site Django</h3>
+<div class="paragraph">
+<p>Dans l&#8217;interface admin Django :</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Sites</strong> → <strong>Sites</strong> → Modifier l&#8217;entrée par défaut</p>
+</li>
+<li>
+<p><strong>Nom de domaine</strong> : <code>votre-domaine.com</code></p>
+</li>
+<li>
+<p><strong>Nom affiché</strong> : <code>Cerberus - Monitoring Cybersécurité</code></p>
+</li>
+<li>
+<p>Sauvegarder les modifications</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_création_dutilisateurs_supplémentaires"><a class="anchor" href="#_création_dutilisateurs_supplémentaires"></a>Création d&#8217;utilisateurs supplémentaires</h3>
+<div class="paragraph">
+<p><strong>Utilisateurs administrateurs</strong> :
+1. <strong>Authentification et autorisation</strong> → <strong>Utilisateurs</strong>
+2. <strong>Ajouter utilisateur</strong> → Remplir les informations
+3. Cocher <strong>Statut équipe</strong> et <strong>Statut superutilisateur</strong>
+4. Assigner les permissions appropriées</p>
+</div>
+<div class="paragraph">
+<p><strong>Utilisateurs standard</strong> :
+1. Créer sans privilèges administrateur
+2. Configurer email pour récupération de compte
+3. Assigner aux groupes selon les besoins</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_test_des_fonctionnalités_principales"><a class="anchor" href="#_test_des_fonctionnalités_principales"></a>Test des fonctionnalités principales</h3>
+<div class="paragraph">
+<p><strong>Dashboard</strong> :
+1. Accéder au Dashboard depuis l&#8217;interface principale
+2. Vérifier l&#8217;affichage des widgets (peuvent être vides au démarrage)
+3. Contrôler l&#8217;absence d&#8217;erreurs de permissions</p>
+</div>
+<div class="paragraph">
+<p><strong>Gestion des entités</strong> :
+1. Naviguer vers <strong>Entities</strong>
+2. Tester l&#8217;ajout d&#8217;une entité de test
+3. Vérifier la sauvegarde et l&#8217;affichage</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuration_de_surveillance"><a class="anchor" href="#_configuration_de_surveillance"></a>Configuration de surveillance</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_ajout_de_votre_première_entité"><a class="anchor" href="#_ajout_de_votre_première_entité"></a>Ajout de votre première entité</h3>
+<div class="paragraph">
+<p><strong>Création d&#8217;organisation test</strong> :
+1. <strong>Entities</strong> → <strong>Add entity</strong>
+2. <strong>Nom</strong> : <code>Test Organization</code>
+3. <strong>Description</strong> : <code>Entité de test pour validation</code>
+4. Assigner des focal points si disponibles
+5. Sauvegarder</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ajout_de_plateformes_de_test"><a class="anchor" href="#_ajout_de_plateformes_de_test"></a>Ajout de plateformes de test</h3>
+<div class="paragraph">
+<p><strong>Création de sites à surveiller</strong> :
+1. Depuis la vue détaillée de l&#8217;entité
+2. <strong>Add platform</strong> → URL de test
+3. <strong>Statut</strong> : Actif
+4. Vérifier l&#8217;association à l&#8217;entité</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_test_du_système_dalertes"><a class="anchor" href="#_test_du_système_dalertes"></a>Test du système d&#8217;alertes</h3>
+<div class="paragraph">
+<p><strong>Vérification du monitoring</strong> :
+1. Attendre quelques minutes pour les premiers scans
+2. Vérifier l&#8217;apparition d&#8217;alertes dans <strong>Alerts</strong>
+3. Tester la modification de statut d&#8217;une alerte
+4. Contrôler les logs système</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_surveillance_des_performances"><a class="anchor" href="#_surveillance_des_performances"></a>Surveillance des performances</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_vérification_des_logs"><a class="anchor" href="#_vérification_des_logs"></a>Vérification des logs</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Logs généraux
+docker-compose logs --tail=50
+
+# Logs par service
+docker-compose logs backend
+docker-compose logs celery_worker
+
+# Suivi temps réel si nécessaire
+docker-compose logs -f backend</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_monitoring_des_ressources"><a class="anchor" href="#_monitoring_des_ressources"></a>Monitoring des ressources</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Utilisation des ressources
+docker stats
+
+# Espace disque
+docker system df
+
+# Volumes utilisés
+docker volume ls</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuration_de_la_sauvegarde"><a class="anchor" href="#_configuration_de_la_sauvegarde"></a>Configuration de la sauvegarde</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_sauvegarde_configuration"><a class="anchor" href="#_sauvegarde_configuration"></a>Sauvegarde configuration</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Sauvegarde fichiers critiques
+tar -czf cerberus-config-$(date +%Y%m%d).tar.gz .env docker-compose.yml
+
+# Sauvegarde certificats SSL
+tar -czf cerberus-ssl-$(date +%Y%m%d).tar.gz nginx/ssl/</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sauvegarde_base_de_données"><a class="anchor" href="#_sauvegarde_base_de_données"></a>Sauvegarde base de données</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Export PostgreSQL
+docker-compose exec postgres pg_dump -U postgres cerberus_db &gt; cerberus-db-$(date +%Y%m%d).sql
+
+# Test de restauration (optionnel)
+cat cerberus-db-YYYYMMDD.sql | docker-compose exec -T postgres psql -U postgres cerberus_db</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuration_surveillance_avancée"><a class="anchor" href="#_configuration_surveillance_avancée"></a>Configuration surveillance avancée</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_notifications_email_optionnel"><a class="anchor" href="#_notifications_email_optionnel"></a>Notifications email (optionnel)</h3>
+<div class="paragraph">
+<p>Si configuré dans le <code>.env</code> :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Test envoi email depuis Django
+docker-compose exec backend python manage.py shell -c "
+from django.core.mail import send_mail
+send_mail('Test Cerberus', 'Email de test', 'cerberus@votre-domaine.com', ['admin@votre-domaine.com'])
+"</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_planification_des_tâches"><a class="anchor" href="#_planification_des_tâches"></a>Planification des tâches</h3>
+<div class="paragraph">
+<p>Vérifier que Celery Beat fonctionne :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Logs du scheduler
+docker-compose logs celery_beat
+
+# Vérifier l'exécution des tâches
+docker-compose logs celery_worker | grep -i "task"</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_résolution_de_problèmes"><a class="anchor" href="#_résolution_de_problèmes"></a>Résolution de problèmes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_services_qui_ne_démarrent_pas"><a class="anchor" href="#_services_qui_ne_démarrent_pas"></a>Services qui ne démarrent pas</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Identifier le service problématique
+docker-compose ps
+
+# Consulter les logs détaillés
+docker-compose logs service_name
+
+# Redémarrage ciblé
+docker-compose restart service_name</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_problèmes_de_connexion"><a class="anchor" href="#_problèmes_de_connexion"></a>Problèmes de connexion</h3>
+<div class="paragraph">
+<p><strong>Erreur SSL</strong> :
+1. Vérifier la configuration DNS
+2. Contrôler les certificats : <code>./update-certs.sh</code>
+3. Vérifier les logs Nginx : <code>docker-compose logs nginx</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Base de données inaccessible</strong> :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Test de connectivité PostgreSQL
+docker-compose exec postgres pg_isready -U postgres
+
+# Test de connexion Django
+docker-compose exec backend python manage.py check --database default</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_performance_dégradée"><a class="anchor" href="#_performance_dégradée"></a>Performance dégradée</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Vérifier les ressources
+docker stats
+
+# Nettoyer si nécessaire
+docker system prune
+
+# Redémarrer tous les services
+docker-compose restart</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_étapes_suivantes"><a class="anchor" href="#_étapes_suivantes"></a>Étapes suivantes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_formation_des_utilisateurs"><a class="anchor" href="#_formation_des_utilisateurs"></a>Formation des utilisateurs</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Créer des comptes pour votre équipe</p>
+</li>
+<li>
+<p>Former aux interfaces Dashboard et Alerts</p>
+</li>
+<li>
+<p>Documenter vos processus de réponse aux incidents</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configuration_de_production"><a class="anchor" href="#_configuration_de_production"></a>Configuration de production</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Planifier les créneaux de maintenance</p>
+</li>
+<li>
+<p>Configurer la surveillance des services</p>
+</li>
+<li>
+<p>Établir une procédure de sauvegarde régulière</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_évolution_de_linstallation"><a class="anchor" href="#_évolution_de_linstallation"></a>Évolution de l&#8217;installation</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Surveiller les mises à jour Cerberus</p>
+</li>
+<li>
+<p>Planifier l&#8217;ajout de nouvelles entités</p>
+</li>
+<li>
+<p>Ajuster la configuration selon l&#8217;usage</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_validation_finale"><a class="anchor" href="#_validation_finale"></a>Validation finale</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>✅ <strong>Tous les services Docker fonctionnent</strong>
+✅ <strong>Accès HTTPS sans erreur SSL</strong>
+✅ <strong>Interface admin Django accessible</strong>
+✅ <strong>Dashboard principal opérationnel</strong>
+✅ <strong>Première entité créée avec succès</strong>
+✅ <strong>Système d&#8217;alertes fonctionnel</strong>
+✅ <strong>Sauvegarde initiale effectuée</strong></p>
+</div>
+<div class="paragraph">
+<p>Cerberus est maintenant opérationnel et prêt pour la surveillance de vos entités en production !</p>
+</div>
+<div class="paragraph">
+<p>Pour aller plus loin, consultez la documentation des fonctionnalités avancées et les guides d&#8217;administration.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../_/js/site.js" data-ui-root-path="../_"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

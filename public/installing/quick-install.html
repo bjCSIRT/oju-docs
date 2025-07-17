@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Quick Install :: Cerberus</title>
+    <meta name="description" content="Automated Cerberus installation with interactive script">
+    <meta name="keywords" content="installation, script, docker, ssl, setup, automated">
+    <meta name="generator" content="Antora 3.1.10">
+    <link rel="stylesheet" href="../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="..">Cerberus</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ROOT" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Cerberus</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../what-is-cerberus/what-is-cerberus.html">What is Cerberus?</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-cerberus/key-features.html">Key Features</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-cerberus/architecture-overview.html">Architecture Overview</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="installing.html">Installing Cerberus</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="quick-install.html">Quick Install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="config-file.html">Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="first-launch.html">First Launch</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../using-cerberus/using.html">Using Cerberus</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/dashboard.html">Dashboard Walkthrough</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/entity.html">Entity Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/alerts.html">Alerts Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/scan.html">Scan Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/logs-audit.html">Logs &amp; Audit Trail</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/user-management.html">User Management &amp; Roles</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/system_administration.html">System administration</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../integrations/integration.html">Integrations</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/rtir.html">RTIR</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/virustotal.html">VirusTotal</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/cerebrate.html">Cerebrate</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../contribute-support/contribute.html">Contribute &amp; Support</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/reporting-bugs.html">Reporting Bugs</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/features-request.html">Feature Requests</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/how-to-contribute.html">How to contribute ?</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cerberus</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">Cerberus</a></div>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Cerberus</a></li>
+    <li><a href="installing.html">Installing Cerberus</a></li>
+    <li><a href="quick-install.html">Quick Install</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///home/analyst/Documents/wiki_cerberus/docs-site/cerberus/./modules/ROOT/pages/installing/quick-install.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Quick Install</h1>
+<div class="sect1">
+<h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The automated installation script handles complete Cerberus deployment. It configures the Docker environment, generates security credentials, sets up SSL certificates, and initializes all required services.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_starting_the_installation"><a class="anchor" href="#_starting_the_installation"></a>Starting the Installation</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_download_cerberus"><a class="anchor" href="#_download_cerberus"></a>Download Cerberus</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Clone the repository
+git clone https://github.com/bjCSIRT-ASIN/cerberus.git
+cd cerberus
+
+# Verify installation script
+ls -la install.sh - for Linux
+Get-Item install.ps1 - for Windows</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_run_installation"><a class="anchor" href="#_run_installation"></a>Run Installation</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Make script executable
+chmod +x install.sh
+
+# Start installation
+./install.sh - for Linux
+.\install.ps1 - for Windows</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_installation_process"><a class="anchor" href="#_installation_process"></a>Installation Process</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_step_1_prerequisites_verification"><a class="anchor" href="#_step_1_prerequisites_verification"></a>Step 1: Prerequisites Verification</h3>
+<div class="paragraph">
+<p>The script automatically checks:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Docker and Docker Compose availability</p>
+</li>
+<li>
+<p>OpenSSL installation</p>
+</li>
+<li>
+<p><code>docker-compose.yml</code> file presence</p>
+</li>
+<li>
+<p>Ports 80 and 443 availability</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_step_2_interactive_configuration"><a class="anchor" href="#_step_2_interactive_configuration"></a>Step 2: Interactive Configuration</h3>
+<div class="paragraph">
+<p><strong>Domain Name</strong> :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">Enter the domain name for your application (e.g., example.com):</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Enter your full domain name (e.g., <code>monitoring.yourcompany.com</code>)</p>
+</div>
+<div class="paragraph">
+<p><strong>Let&#8217;s Encrypt Email</strong> :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">Enter your email address for Let's Encrypt:</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Email required for free SSL certificate acquisition</p>
+</div>
+<div class="paragraph">
+<p><strong>SSL Certificate Information</strong> :</p>
+</div>
+<div class="paragraph">
+<p>Configuration for self-signed certificate fallback:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Country Code (2 letters) : <code>US</code></p>
+</li>
+<li>
+<p>State/Province : <code>California</code></p>
+</li>
+<li>
+<p>City : <code>San Francisco</code></p>
+</li>
+<li>
+<p>Organization : <code>Your Company</code></p>
+</li>
+<li>
+<p>Organizational Unit : <code>IT Department</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_step_3_automatic_generation"><a class="anchor" href="#_step_3_automatic_generation"></a>Step 3: Automatic Generation</h3>
+<div class="paragraph">
+<p>The script automatically generates:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>PostgreSQL Password</strong> : 16 secure random characters</p>
+</li>
+<li>
+<p><strong>Redis Password</strong> : 16 secure random characters</p>
+</li>
+<li>
+<p><strong>Django Secret Key</strong> : 32 base64-encoded characters</p>
+</li>
+<li>
+<p><strong>Environment File</strong> : Complete application configuration</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_step_4_image_building"><a class="anchor" href="#_step_4_image_building"></a>Step 4: Image Building</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Script automatically executes
+docker-compose build</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Builds custom Docker images for all services.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_step_5_ssl_configuration"><a class="anchor" href="#_step_5_ssl_configuration"></a>Step 5: SSL Configuration</h3>
+<div class="paragraph">
+<p><strong>Staging Mode (recommended for testing)</strong> :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">Do you want to use Let's Encrypt staging mode (for testing without rate limits)? (y/N):</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>y</code> : Test certificates (not trusted by browsers)</p>
+</li>
+<li>
+<p><code>N</code> : Production certificates (limited to 5/week/domain)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Automatic Process</strong> :</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Nginx service startup</p>
+</li>
+<li>
+<p>Let&#8217;s Encrypt certificate request</p>
+</li>
+<li>
+<p>If failed: self-signed certificate generation</p>
+</li>
+<li>
+<p>Nginx reload with new certificates</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_step_6_service_startup"><a class="anchor" href="#_step_6_service_startup"></a>Step 6: Service Startup</h3>
+<div class="paragraph">
+<p>Sequential service launch:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>PostgreSQL and Redis</strong> : Data services</p>
+</li>
+<li>
+<p><strong>Django Backend</strong> : API and business logic</p>
+</li>
+<li>
+<p><strong>Vue.js Frontend</strong> : User interface</p>
+</li>
+<li>
+<p><strong>Celery Workers</strong> : Asynchronous processing</p>
+</li>
+<li>
+<p><strong>Nginx</strong> : Reverse proxy with SSL</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_step_7_superuser_creation"><a class="anchor" href="#_step_7_superuser_creation"></a>Step 7: Superuser Creation</h3>
+<div class="paragraph">
+<p><strong>Admin Account Configuration</strong> :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">Enter superuser username (at least 3 alphabetic characters):
+Enter superuser email:
+Password:
+Password (again):</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The script validates and verifies creation with up to 5 automatic attempts.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_installation_results"><a class="anchor" href="#_installation_results"></a>Installation Results</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_deployed_services"><a class="anchor" href="#_deployed_services"></a>Deployed Services</h3>
+<div class="paragraph">
+<p>Automatic container verification:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Script displays final status
+docker-compose ps
+
+# All services should show "Up"</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_application_access"><a class="anchor" href="#_application_access"></a>Application Access</h3>
+<div class="paragraph">
+<p>Upon successful installation:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">================================================================
+Installation completed successfully!
+
+You can access your application at:
+https://yourdomain.com
+
+To access the Django admin interface:
+https://yourdomain.com/admin
+================================================================</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_generated_files"><a class="anchor" href="#_generated_files"></a>Generated Files</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><code>.env</code></strong> : Complete environment configuration</p>
+</li>
+<li>
+<p><strong><code>nginx/ssl/</code></strong> : SSL certificates (if self-signed)</p>
+</li>
+<li>
+<p><strong>Docker Volumes</strong> : Persistent service data</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_error_handling"><a class="anchor" href="#_error_handling"></a>Error Handling</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_missing_prerequisites"><a class="anchor" href="#_missing_prerequisites"></a>Missing Prerequisites</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">[ERROR] Docker is not installed. Please install Docker first.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Solution</strong> : Install missing tools according to <a href="prerequisites.html" class="xref page">Prerequisites</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_port_conflicts"><a class="anchor" href="#_port_conflicts"></a>Port Conflicts</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">[WARNING] Ports 80 or 443 are already in use.
+Continue anyway? (y/N):</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Solutions</strong> :
+* Stop services using these ports
+* Choose to continue (may cause conflicts)</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_lets_encrypt_certificate_failure"><a class="anchor" href="#_lets_encrypt_certificate_failure"></a>Let&#8217;s Encrypt Certificate Failure</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">[WARNING] Failed to obtain Let's Encrypt certificate. Self-signed certificates will be used.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Possible Causes</strong> :
+* DNS not configured correctly
+* Domain inaccessible from Internet
+* Let&#8217;s Encrypt rate limits reached</p>
+</div>
+<div class="paragraph">
+<p><strong>Fallback</strong> : Self-signed certificates generated automatically</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_superuser_creation_failure"><a class="anchor" href="#_superuser_creation_failure"></a>Superuser Creation Failure</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">[ERROR] Failed to create superuser after 5 attempts. Installation aborted.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Solutions</strong> :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Check logs: <code>docker-compose logs backend</code></p>
+</li>
+<li>
+<p>Verify database connectivity</p>
+</li>
+<li>
+<p>Restart installation</p>
+</li>
+<li>
+<p>Access backend container and execute  <code><code>python3 manage.py createsuperuser</code></code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_optional_cleanup"><a class="anchor" href="#_optional_cleanup"></a>Optional Cleanup</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">Do you want to clean up unused Docker resources? (y/N):</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Removes unused Docker images and containers to free disk space.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_next_steps"><a class="anchor" href="#_next_steps"></a>Next Steps</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Configure advanced settings in <a href="config-file.html" class="xref page">Configuration File</a></p>
+</li>
+<li>
+<p>Review <a href="first-launch.html" class="xref page">First Launch</a> for verification procedures</p>
+</li>
+<li>
+<p>Access the interface to begin monitoring setup</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Your Cerberus installation is now complete and ready for production use!</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<script id="site-script" src="../_/js/site.js" data-ui-root-path="../_"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

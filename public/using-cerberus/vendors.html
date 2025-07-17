@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vendor Integrations :: Cerberus</title>
+    <meta name="description" content="External service integrations and vendor management">
+    <meta name="keywords" content="integrations, vendors, antivirus, rtir, cerebrate, virustotal, external-services">
+    <meta name="generator" content="Antora 3.1.10">
+    <link rel="stylesheet" href="../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="..">Cerberus</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ROOT" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Cerberus</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../what-is-cerberus/what-is-cerberus.html">What is Cerberus?</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-cerberus/key-features.html">Key Features</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-cerberus/architecture-overview.html">Architecture Overview</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../installing/installing.html">Installing Cerberus</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/quick-install.html">Quick Install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/config-file.html">Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/first-launch.html">First Launch</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="using.html">Using Cerberus</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="dashboard.html">Dashboard Walkthrough</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="entity.html">Entity Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="alerts.html">Alerts Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="scan.html">Scan Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="logs-audit.html">Logs &amp; Audit Trail</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="user-management.html">User Management &amp; Roles</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="vendors.html">Vendor Integrations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ui-components.html">UI Components</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../integrations/integration.html">Integrations</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/rtir.html">RTIR</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/virustotal.html">VirusTotal</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/cerebrate.html">Cerebrate</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../contribute-support/contribute.html">Contribute &amp; Support</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/reporting-bugs.html">Reporting Bugs</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/features-request.html">Feature Requests</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/how-to-contribute.html">How to contribute ?</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cerberus</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">Cerberus</a></div>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Cerberus</a></li>
+    <li><a href="using.html">Using Cerberus</a></li>
+    <li><a href="vendors.html">Vendor Integrations</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///home/analyst/Documents/wiki_cerberus/docs-site/cerberus/./modules/ROOT/pages/using-cerberus/vendors.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Vendor Integrations</h1>
+<div class="sect1">
+<h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Vendor Integrations enable Cerberus to connect with external security services and manage antivirus vendor relationships. Configure automated ticket creation, threat intelligence, data synchronization, and maintain comprehensive vendor contact information.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_integration_categories"><a class="anchor" href="#_integration_categories"></a>Integration Categories</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_antivirus_vendors"><a class="anchor" href="#_antivirus_vendors"></a>Antivirus Vendors</h3>
+<div class="paragraph">
+<p><strong>Local Vendor Database:</strong>
+* Vendor contact information management
+* Relationship tracking
+* Communication coordination
+* Alert correlation with vendor data</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_security_tools_integration"><a class="anchor" href="#_security_tools_integration"></a>Security Tools Integration</h3>
+<div class="paragraph">
+<p><strong>External Services:</strong>
+* <strong>RTIR</strong> - Incident response ticket creation
+* <strong>VirusTotal</strong> - Malware and threat detection
+* <strong>Cerebrate</strong> - Data synchronization and management</p>
+</div>
+<div class="paragraph">
+<p><strong>Integration Benefits:</strong>
+* Automated workflow coordination
+* Enhanced threat intelligence
+* Streamlined incident response
+* Centralized data management</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_antivirus_vendor_management"><a class="anchor" href="#_antivirus_vendor_management"></a>Antivirus Vendor Management</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_vendor_information"><a class="anchor" href="#_vendor_information"></a>Vendor Information</h3>
+<div class="paragraph">
+<p><strong>Vendor Details:</strong>
+* <strong>Name</strong> - Antivirus vendor name
+* <strong>Contact</strong> - Primary contact information
+* <strong>Comments</strong> - Additional notes and details
+* <strong>Timestamps</strong> - Creation and modification dates</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_managing_vendors"><a class="anchor" href="#_managing_vendors"></a>Managing Vendors</h3>
+<div class="paragraph">
+<p><strong>Adding Vendors:</strong>
+. Navigate to <strong>Vendor Integrations</strong>
+. Click <strong>Add Vendor</strong>
+. Enter vendor information:
+   * Vendor name
+   * Contact details
+   * Relevant comments
+. Save to create vendor record</p>
+</div>
+<div class="paragraph">
+<p><strong>Updating Vendors:</strong>
+. Select existing vendor
+. Modify vendor information
+. Update contact details
+. Save changes</p>
+</div>
+<div class="paragraph">
+<p><strong>Vendor Operations:</strong>
+* Create new vendor entries
+* Update contact information
+* Remove outdated vendors
+* Track vendor relationships</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_vendor_usage"><a class="anchor" href="#_vendor_usage"></a>Vendor Usage</h3>
+<div class="paragraph">
+<p><strong>Alert Integration:</strong>
+* VirusTotal results reference vendor database
+* Vendor contact information included in alerts
+* Automated vendor notification capabilities
+* Incident coordination support</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rtir_integration"><a class="anchor" href="#_rtir_integration"></a>RTIR Integration</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_configuration_setup"><a class="anchor" href="#_configuration_setup"></a>Configuration Setup</h3>
+<div class="paragraph">
+<p><strong>Connection Details:</strong>
+* <strong>URL</strong> - RTIR server address (<a href="https://rtir.example.com" class="bare">https://rtir.example.com</a>)
+* <strong>Username</strong> - Authentication username
+* <strong>Password</strong> - Authentication password
+* <strong>Connection Testing</strong> - Automatic validation</p>
+</div>
+<div class="paragraph">
+<p><strong>Setup Process:</strong>
+. Navigate to <strong>Integrations &gt; RTIR</strong>
+. Enter server connection details
+. Test connection validity
+. Activate integration
+. Configure ticket creation settings</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ticket_creation"><a class="anchor" href="#_ticket_creation"></a>Ticket Creation</h3>
+<div class="paragraph">
+<p><strong>Automatic Ticket Generation:</strong>
+* Alert-triggered ticket creation
+* Detailed incident information
+* Stakeholder notification
+* Priority assignment based on alert type</p>
+</div>
+<div class="paragraph">
+<p><strong>Ticket Content:</strong>
+* <strong>Subject</strong> - Alert type and affected platform
+* <strong>Description</strong> - Detailed alert information
+* <strong>Requestors</strong> - Entity focal points
+* <strong>Priority</strong> - Based on alert severity
+* <strong>Custom Fields</strong> - IP addresses, domains, CVE IDs</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_rtir_operations"><a class="anchor" href="#_rtir_operations"></a>RTIR Operations</h3>
+<div class="paragraph">
+<p><strong>Status Management:</strong>
+* Enable/disable RTIR integration
+* Connection validation on activation
+* Automatic retry on failures
+* Error logging and notification</p>
+</div>
+<div class="paragraph">
+<p><strong>Ticket Workflow:</strong>
+* Cerberus alert generation
+* Automatic RTIR ticket creation
+* Stakeholder notification
+* Incident tracking coordination</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_virustotal_integration"><a class="anchor" href="#_virustotal_integration"></a>VirusTotal Integration</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_configuration"><a class="anchor" href="#_configuration"></a>Configuration</h3>
+<div class="paragraph">
+<p><strong>API Setup:</strong>
+* <strong>API Key</strong> - VirusTotal authentication key
+* <strong>Scan Frequency</strong> - Automated scan interval
+* <strong>Connection Validation</strong> - API key verification</p>
+</div>
+<div class="paragraph">
+<p><strong>Setup Steps:</strong>
+. Navigate to <strong>Integrations &gt; VirusTotal</strong>
+. Enter valid API key
+. Configure scan frequency
+. Test API connectivity
+. Activate integration</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_scanning_operations"><a class="anchor" href="#_scanning_operations"></a>Scanning Operations</h3>
+<div class="paragraph">
+<p><strong>Automated Scanning:</strong>
+* Periodic platform URL analysis
+* Malware detection alerts
+* Vendor analysis results
+* Threat intelligence correlation</p>
+</div>
+<div class="paragraph">
+<p><strong>Scan Results:</strong>
+* Malicious URL detection
+* Vendor-specific findings
+* Alert generation for threats
+* Detailed threat analysis</p>
+</div>
+<div class="paragraph">
+<p><strong>Alert Integration:</strong>
+* Automatic alert creation for threats
+* Vendor information inclusion
+* Stakeholder notification
+* Incident response coordination</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cerebrate_integration"><a class="anchor" href="#_cerebrate_integration"></a>Cerebrate Integration</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_configuration_setup_2"><a class="anchor" href="#_configuration_setup_2"></a>Configuration Setup</h3>
+<div class="paragraph">
+<p><strong>Connection Parameters:</strong>
+* <strong>URL</strong> - Cerebrate server address
+* <strong>API Key</strong> - Authentication token
+* <strong>Refresh Frequency</strong> - Data synchronization interval</p>
+</div>
+<div class="paragraph">
+<p><strong>Setup Process:</strong>
+. Navigate to <strong>Integrations &gt; Cerebrate</strong>
+. Configure server connection
+. Set synchronization frequency
+. Test connectivity
+. Activate integration</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_data_synchronization"><a class="anchor" href="#_data_synchronization"></a>Data Synchronization</h3>
+<div class="paragraph">
+<p><strong>Synchronized Data:</strong>
+* <strong>Organizations</strong> - Entity information
+* <strong>Individuals</strong> - Focal point contacts
+* <strong>Tags</strong> - Functional classifications
+* <strong>Relationships</strong> - Entity-contact associations</p>
+</div>
+<div class="paragraph">
+<p><strong>Sync Process:</strong>
+* <strong>Automatic Sync</strong> - Scheduled synchronization
+* <strong>Manual Refresh</strong> - On-demand data update
+* <strong>Conflict Resolution</strong> - Data precedence rules
+* <strong>Status Tracking</strong> - Synchronization logging</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sync_operations"><a class="anchor" href="#_sync_operations"></a>Sync Operations</h3>
+<div class="paragraph">
+<p><strong>Data Management:</strong>
+* Create new entities from Cerebrate
+* Update existing contact information
+* Manage focal point relationships
+* Handle deactivated contacts</p>
+</div>
+<div class="paragraph">
+<p><strong>Manual Refresh:</strong>
+. Navigate to <strong>Integrations &gt; Cerebrate</strong>
+. Click <strong>Manual Refresh</strong>
+. Monitor synchronization progress
+. Review sync statistics
+. Check logs for any issues</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_integration_management"><a class="anchor" href="#_integration_management"></a>Integration Management</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_status_control"><a class="anchor" href="#_status_control"></a>Status Control</h3>
+<div class="paragraph">
+<p><strong>Integration Status:</strong>
+* <strong>Active</strong> - Integration operational
+* <strong>Inactive</strong> - Integration disabled
+* <strong>Configuration</strong> - Setup in progress</p>
+</div>
+<div class="paragraph">
+<p><strong>Status Management:</strong>
+. Select integration service
+. Click <strong>Toggle Status</strong>
+. Confirm configuration validity
+. Monitor activation success
+. Review operational status</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_connection_testing"><a class="anchor" href="#_connection_testing"></a>Connection Testing</h3>
+<div class="paragraph">
+<p><strong>Validation Process:</strong>
+* Automatic connection testing on activation
+* Credential verification
+* Service availability confirmation
+* Error reporting and logging</p>
+</div>
+<div class="paragraph">
+<p><strong>Test Results:</strong>
+* <strong>Success</strong> - Integration ready for use
+* <strong>Failure</strong> - Configuration issues identified
+* <strong>Error Details</strong> - Specific problem information
+* <strong>Resolution Guidance</strong> - Troubleshooting suggestions</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_operational_workflows"><a class="anchor" href="#_operational_workflows"></a>Operational Workflows</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_daily_operations"><a class="anchor" href="#_daily_operations"></a>Daily Operations</h3>
+<div class="paragraph">
+<p><strong>Integration Monitoring:</strong>
+. Check integration status
+. Review sync statistics
+. Monitor ticket creation
+. Verify scan operations</p>
+</div>
+<div class="paragraph">
+<p><strong>Maintenance Tasks:</strong>
+. Update vendor contact information
+. Review integration logs
+. Test connection validity
+. Update API keys as needed</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_incident_response"><a class="anchor" href="#_incident_response"></a>Incident Response</h3>
+<div class="paragraph">
+<p><strong>Automated Workflows:</strong>
+. Alert detection triggers integrations
+. RTIR tickets created automatically
+. VirusTotal analysis performed
+. Vendor information referenced
+. Stakeholders notified</p>
+</div>
+<div class="paragraph">
+<p><strong>Manual Coordination:</strong>
+. Access vendor contact information
+. Create additional RTIR tickets
+. Perform manual VirusTotal scans
+. Coordinate response efforts</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_troubleshooting"><a class="anchor" href="#_troubleshooting"></a>Troubleshooting</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_common_issues"><a class="anchor" href="#_common_issues"></a>Common Issues</h3>
+<div class="paragraph">
+<p><strong>RTIR Problems:</strong>
+* Verify server URL accessibility
+* Check authentication credentials
+* Confirm network connectivity
+* Review firewall settings</p>
+</div>
+<div class="paragraph">
+<p><strong>VirusTotal Issues:</strong>
+* Validate API key accuracy
+* Check rate limiting status
+* Verify internet connectivity
+* Monitor quota usage</p>
+</div>
+<div class="paragraph">
+<p><strong>Cerebrate Problems:</strong>
+* Test API key validity
+* Verify server accessibility
+* Check synchronization logs
+* Review data conflicts</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_best_practices"><a class="anchor" href="#_best_practices"></a>Best Practices</h3>
+<div class="paragraph">
+<p><strong>Integration Maintenance:</strong>
+* Regular connection testing
+* Periodic credential updates
+* Monitor integration logs
+* Update configurations as needed</p>
+</div>
+<div class="paragraph">
+<p><strong>Security Considerations:</strong>
+* Secure credential storage
+* API key rotation policies
+* Network security compliance
+* Access logging and monitoring</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_security_and_compliance"><a class="anchor" href="#_security_and_compliance"></a>Security and Compliance</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_data_protection"><a class="anchor" href="#_data_protection"></a>Data Protection</h3>
+<div class="paragraph">
+<p><strong>Secure Handling:</strong>
+* Encrypted credential storage
+* Secure API communications
+* Data transmission protection
+* Access audit logging</p>
+</div>
+<div class="paragraph">
+<p><strong>Privacy Compliance:</strong>
+* Personal data protection
+* Contact information security
+* Integration data handling
+* Retention policy compliance</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_access_control"><a class="anchor" href="#_access_control"></a>Access Control</h3>
+<div class="paragraph">
+<p><strong>Permission Requirements:</strong>
+* Integration view permissions
+* Configuration edit permissions
+* Status toggle permissions
+* Administrative oversight</p>
+</div>
+<div class="paragraph">
+<p><strong>Audit Trail:</strong>
+* All configuration changes logged
+* Integration usage tracking
+* Status change monitoring
+* Error event recording</p>
+</div>
+<div class="paragraph">
+<p>Vendor Integrations enhance Cerberus capabilities by connecting external security services and maintaining comprehensive vendor relationships for effective incident response and threat management.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../_/js/site.js" data-ui-root-path="../_"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

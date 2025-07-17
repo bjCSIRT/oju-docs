@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>RTIR Integration :: Cerberus</title>
+    <meta name="description" content="Request Tracker for Incident Response integration guide">
+    <meta name="keywords" content="rtir, incident-response, tickets, automation, stakeholders">
+    <meta name="generator" content="Antora 3.1.10">
+    <link rel="stylesheet" href="../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="..">Cerberus</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ROOT" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Cerberus</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../what-is-cerberus/what-is-cerberus.html">What is Cerberus?</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-cerberus/key-features.html">Key Features</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-cerberus/architecture-overview.html">Architecture Overview</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../installing/installing.html">Installing Cerberus</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/quick-install.html">Quick Install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/config-file.html">Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/first-launch.html">First Launch</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../using-cerberus/using.html">Using Cerberus</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/dashboard.html">Dashboard Walkthrough</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/entity.html">Entity Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/alerts.html">Alerts Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/scan.html">Scan Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/logs-audit.html">Logs &amp; Audit Trail</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/user-management.html">User Management &amp; Roles</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/system_administration.html">System administration</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="integration.html">Integrations</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="rtir.html">RTIR</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="virustotal.html">VirusTotal</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="cerebrate.html">Cerebrate</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../contribute-support/contribute.html">Contribute &amp; Support</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/reporting-bugs.html">Reporting Bugs</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/features-request.html">Feature Requests</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/how-to-contribute.html">How to contribute ?</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cerberus</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">Cerberus</a></div>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Cerberus</a></li>
+    <li><a href="integration.html">Integrations</a></li>
+    <li><a href="rtir.html">RTIR</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///home/analyst/Documents/wiki_cerberus/docs-site/cerberus/./modules/ROOT/pages/integrations/rtir.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">RTIR Integration</h1>
+<div class="sect1">
+<h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>RTIR (Request Tracker for Incident Response) integration automates incident ticket creation and stakeholder notification. When security alerts are detected, Cerberus automatically creates detailed tickets in RTIR and notifies relevant stakeholders through their designated focal points.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuration_setup"><a class="anchor" href="#_configuration_setup"></a>Configuration Setup</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_connection_parameters"><a class="anchor" href="#_connection_parameters"></a>Connection Parameters</h3>
+<div class="paragraph">
+<p><strong>Required Settings:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>URL</strong> - RTIR server address (e.g., <a href="https://rtir.example.com" class="bare">https://rtir.example.com</a>)</p>
+</li>
+<li>
+<p><strong>Username</strong> - RTIR authentication username</p>
+</li>
+<li>
+<p><strong>Password</strong> - RTIR authentication password</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Configuration Steps:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Navigate to <strong>Config &gt; Integration</strong> and click <strong>RTIR&#8217;s configure button (<a href="https://cerberus.example.com/config/integrations" class="bare">https://cerberus.example.com/config/integrations</a>)</strong></p>
+</li>
+<li>
+<p>Enter RTIR server connection details</p>
+</li>
+<li>
+<p>Save configuration</p>
+</li>
+<li>
+<p>Activate integration</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/integrations/rtir_config.png" alt="rtir config">
+</div>
+<div class="title">Figure 1. RTIR configuration</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ticket_creation_process"><a class="anchor" href="#_ticket_creation_process"></a>Ticket Creation Process</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_automatic_ticket_generation"><a class="anchor" href="#_automatic_ticket_generation"></a>Automatic Ticket Generation</h3>
+<div class="paragraph">
+<p><strong>Trigger Events:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Security alert detection (SSL, Domain, Defacement, Availability, VirusTotal)</p>
+</li>
+<li>
+<p>Alert processing and classification</p>
+</li>
+<li>
+<p>Stakeholder identification via entity focal points</p>
+</li>
+<li>
+<p>Automatic ticket creation in RTIR</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Ticket Content:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Subject</strong> - Alert type and affected platform URL</p>
+</li>
+<li>
+<p><strong>Content</strong> - Detailed alert information and analysis</p>
+</li>
+<li>
+<p><strong>Requestors</strong> - Entity focal points (active contacts only)</p>
+</li>
+<li>
+<p><strong>Priority</strong> - Based on alert severity and type</p>
+</li>
+<li>
+<p><strong>Status</strong> - Initial status set to "new"</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_troubleshooting"><a class="anchor" href="#_troubleshooting"></a>Troubleshooting</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_common_issues"><a class="anchor" href="#_common_issues"></a>Common Issues</h3>
+<div class="paragraph">
+<p><strong>Connection Problems:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Server Unreachable</strong> - Verify RTIR URL accessibility</p>
+</li>
+<li>
+<p><strong>Authentication Failed</strong> - Check username/password accuracy</p>
+</li>
+<li>
+<p><strong>Network Issues</strong> - Confirm firewall and proxy settings</p>
+</li>
+<li>
+<p><strong>SSL Certificate</strong> - Validate RTIR server certificate</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Ticket Creation Failures:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Missing Focal Points</strong> - Ensure entity has active contacts</p>
+</li>
+<li>
+<p><strong>Invalid Queue</strong> - Verify RTIR queue configuration</p>
+</li>
+<li>
+<p><strong>Permission Issues</strong> - Check RTIR user permissions</p>
+</li>
+<li>
+<p><strong>Data Validation</strong> - Review ticket content formatting</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>RTIR integration ensures seamless incident response coordination by automatically creating detailed tickets and notifying appropriate stakeholders, enabling rapid response to security incidents across monitored organizations.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+While the tool can create tickets in RTIR and resolve alerts on its own dashboard when issues are addressed, it does not automatically resolve tickets within RTIR itself. For troubleshooting ticket creation or other integration issues, detailed logs are available in the workers container.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<script id="site-script" src="../_/js/site.js" data-ui-root-path="../_"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

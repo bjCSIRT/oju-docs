@@ -1,0 +1,131 @@
+= Configuration File
+:description: Advanced .env file configuration and Cerberus parameters
+:keywords: configuration, environment, ssl, database, security, env
+
+== Overview
+
+The `.env` file contains all Cerberus configuration variables. Automatically generated during installation, it can be customized to adapt the application to your specific environment requirements.
+
+== .env File Structure
+
+=== Auto-generated Configuration
+[source,bash]
+----
+# General Configuration
+DOMAIN_NAME=yourdomain.com
+API_URL=https://yourdomain.com/api
+FRONTEND_URL=https://yourdomain.com
+
+# Django Configuration
+DEBUG=False
+SECRET_KEY=generated_secret_key_32_chars
+DJANGO_ALLOWED_HOSTS=yourdomain.com,www.yourdomain.com
+CORS_ALLOWED_ORIGINS=https://yourdomain.com,https://www.yourdomain.com
+
+# Database Configuration
+POSTGRES_DB=cerberus_db
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=generated_16_chars_password
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+
+# Redis Configuration
+REDIS_PASSWORD=generated_16_chars_password
+REDIS_HOST=redis
+REDIS_PORT=6379
+REDIS_URL=redis://:password@redis:6379/0
+
+# Celery Configuration
+CELERY_BROKER_URL=redis://:password@redis:6379/0
+CELERY_RESULT_BACKEND=redis://:password@redis:6379/0
+
+# Let's Encrypt Configuration
+CERTBOT_EMAIL=your-email@domain.com
+
+# Frontend Configuration
+NODE_ENV=production
+
+# SSL Certificate Information
+SSL_COUNTRY=US
+SSL_STATE=California
+SSL_CITY=San Francisco
+SSL_ORG=Your Organization
+SSL_ORG_UNIT=IT Department
+----
+
+== Key Configuration Variables
+
+=== General Settings
+[cols="2,1,3"]
+|===
+|Variable |Type |Description
+
+|`DOMAIN_NAME` |string |Primary domain name for Cerberus access
+|`API_URL` |URL |Complete Django backend API URL
+|`FRONTEND_URL` |URL |Complete Vue.js frontend interface URL
+|===
+
+=== Django Framework Settings
+[cols="2,1,3"]
+|===
+|Variable |Type |Description
+
+|`DEBUG` |boolean |Django debug mode (False for production)
+|`SECRET_KEY` |string |Django secret key for session/cookie encryption
+|`DJANGO_ALLOWED_HOSTS` |list |Allowed domains for HTTP requests
+|`CORS_ALLOWED_ORIGINS` |list |Permitted origins for CORS requests
+|===
+
+=== Database Configuration
+[cols="2,1,3"]
+|===
+|Variable |Type |Description
+
+|`POSTGRES_DB` |string |PostgreSQL database name
+|`POSTGRES_USER` |string |PostgreSQL user (postgres by default)
+|`POSTGRES_PASSWORD` |string |Auto-generated PostgreSQL password
+|`POSTGRES_HOST` |string |PostgreSQL host (container name)
+|`POSTGRES_PORT` |int |PostgreSQL port (5432 standard)
+|===
+
+== Safe Configuration Modification
+
+=== Preventive Backup
+[source,bash]
+----
+# Always backup before modifications
+cp .env .env.backup.$(date +%Y%m%d-%H%M%S)
+----
+
+=== File Editing
+[source,bash]
+----
+# Secure editing
+nano .env
+
+# Syntax verification
+docker-compose config --quiet && echo "Configuration valid"
+----
+
+=== Applying Changes
+[source,bash]
+----
+# Restart services to apply changes
+docker-compose down
+docker-compose up -d
+
+# Verify functionality
+docker-compose ps
+----
+
+== Configuration Validation
+
+After any `.env` modification:
+
+1. **Syntax Check** : `docker-compose config`
+2. **Service Restart** : `docker-compose up -d`
+3. **Status Verification** : `docker-compose ps`
+4. **Connectivity Test** : `curl -I https://yourdomain.com`
+5. **Functionality Test** : Login to admin interface
+
+Your configuration is now customized for your environment. Continue with xref:installing/first-launch.adoc[First Launch] for final verification procedures.

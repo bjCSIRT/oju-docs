@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Architecture Overview :: Cerberus</title>
+    <meta name="description" content="Technical architecture and system components of Cerberus">
+    <meta name="keywords" content="architecture, docker, django, vue, postgresql, redis, technical">
+    <meta name="generator" content="Antora 3.1.10">
+    <link rel="stylesheet" href="../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="..">Cerberus</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ROOT" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Cerberus</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="what-is-cerberus.html">What is Cerberus?</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="key-features.html">Key Features</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="architecture-overview.html">Architecture Overview</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../installing/installing.html">Installing Cerberus</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/quick-install.html">Quick Install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/config-file.html">Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/first-launch.html">First Launch</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../using-cerberus/using.html">Using Cerberus</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/dashboard.html">Dashboard Walkthrough</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/entity.html">Entity Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/alerts.html">Alerts Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/scan.html">Scan Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/logs-audit.html">Logs &amp; Audit Trail</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/user-management.html">User Management &amp; Roles</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/system_administration.html">System administration</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../integrations/integration.html">Integrations</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/rtir.html">RTIR</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/virustotal.html">VirusTotal</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/cerebrate.html">Cerebrate</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../contribute-support/contribute.html">Contribute &amp; Support</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/reporting-bugs.html">Reporting Bugs</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/features-request.html">Feature Requests</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/how-to-contribute.html">How to contribute ?</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cerberus</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">Cerberus</a></div>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Cerberus</a></li>
+    <li><a href="what-is-cerberus.html">What is Cerberus?</a></li>
+    <li><a href="architecture-overview.html">Architecture Overview</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///home/analyst/Documents/wiki_cerberus/docs-site/cerberus/./modules/ROOT/pages/what-is-cerberus/architecture-overview.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Architecture Overview</h1>
+<div class="sect1">
+<h2 id="_technical_overview"><a class="anchor" href="#_technical_overview"></a>Technical Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cerberus employs a containerized microservices architecture based on Docker, ensuring isolation, scalability, and deployment simplicity. The entire stack is orchestrated via Docker Compose for streamlined management.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_technology_stack"><a class="anchor" href="#_technology_stack"></a>Technology Stack</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_backend_django_rest_framework"><a class="anchor" href="#_backend_django_rest_framework"></a>Backend - Django REST Framework</h3>
+<div class="paragraph">
+<p><strong>Role</strong> : REST API, business logic, data management</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Framework</strong> : Django 4.2.7 with Django REST Framework</p>
+</li>
+<li>
+<p><strong>Database</strong> : PostgreSQL for data persistence</p>
+</li>
+<li>
+<p><strong>Cache</strong> : Redis for performance optimization</p>
+</li>
+<li>
+<p><strong>Async Tasks</strong> : Celery workers and scheduler</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_frontend_vue_js"><a class="anchor" href="#_frontend_vue_js"></a>Frontend - Vue.js</h3>
+<div class="paragraph">
+<p><strong>Role</strong> : Responsive user interface</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Framework</strong> : Vue.js 3</p>
+</li>
+<li>
+<p><strong>Visualizations</strong> : Real-time metrics and analytics charts</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_container_architecture"><a class="anchor" href="#_container_architecture"></a>Container Architecture</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_core_services"><a class="anchor" href="#_core_services"></a>Core Services</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 28.5714%;">
+<col style="width: 28.5714%;">
+<col style="width: 42.8572%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Container</th>
+<th class="tableblock halign-left valign-top">Technology</th>
+<th class="tableblock halign-left valign-top">Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>backend</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Django + Gunicorn 21.2.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">REST API, business logic</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>frontend</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vue.js + Nginx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">User interface</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>nginx</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nginx</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reverse proxy, SSL, static files</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>postgres</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PostgreSQL 16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Primary database</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>redis</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redis 7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cache and message broker</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>celery_worker</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Celery</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Asynchronous processing</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>celery_beat</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Celery Beat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scheduled tasks/cron jobs</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_system_architecture_diagram"><a class="anchor" href="#_system_architecture_diagram"></a>System Architecture Diagram</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/what-is-cerberus/cap1.png" alt="cap1">
+</div>
+<div class="title">Figure 1. Cerberus architecture</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<script id="site-script" src="../_/js/site.js" data-ui-root-path="../_"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

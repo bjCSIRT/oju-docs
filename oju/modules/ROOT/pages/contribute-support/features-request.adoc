@@ -1,0 +1,60 @@
+= Feature Requests
+:description: How to suggest platform enhancements
+:keywords: features, enhancements, requests, suggestions
+
+== Feature Request Template
+
+[source,text]
+----
+**Title:** Clear feature name
+
+**Category:** Monitoring/UI/Integration/Security/Other
+
+**Priority:** High/Medium/Low
+
+**Problem Description:**
+What current limitation or issue does this solve?
+
+**Proposed Solution:**
+How should this feature work?
+
+**Use Case Example:**
+Specific scenario where this would be used:
+1. User action
+2. Expected system response
+3. Desired outcome
+
+**Target Users:** Who would use this feature?
+
+**Business Impact:** How this improves operations
+
+**Alternative Solutions:** Other ways you've tried to solve this
+
+**Additional Info:**
+
+- Mockups/sketches (if UI change)
+- Similar features in other tools
+- Technical considerations
+----
+
+== Feature Categories
+
+[cols="1,3"]
+|===
+|Category |Examples
+
+|**Monitoring**
+|New scan types, alert improvements, automated responses
+
+|**User Interface**
+|Dashboard widgets, mobile optimization, workflow improvements
+
+|**Integration**
+|New tool connections, API enhancements, data export options
+
+|**Security**
+|Access controls, threat detection, compliance features
+
+|**Reporting**
+|Custom reports, analytics, data visualization
+|===

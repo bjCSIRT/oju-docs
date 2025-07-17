@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cerebrate Integration :: Cerberus</title>
+    <meta name="description" content="Organizational data synchronization with Cerebrate platform">
+    <meta name="keywords" content="cerebrate, synchronization, organizations, contacts, data-management, automation">
+    <meta name="generator" content="Antora 3.1.10">
+    <link rel="stylesheet" href="../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="..">Cerberus</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ROOT" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Cerberus</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../what-is-cerberus/what-is-cerberus.html">What is Cerberus?</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-cerberus/key-features.html">Key Features</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-cerberus/architecture-overview.html">Architecture Overview</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../installing/installing.html">Installing Cerberus</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/quick-install.html">Quick Install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/config-file.html">Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/first-launch.html">First Launch</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../using-cerberus/using.html">Using Cerberus</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/dashboard.html">Dashboard Walkthrough</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/entity.html">Entity Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/alerts.html">Alerts Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/scan.html">Scan Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/logs-audit.html">Logs &amp; Audit Trail</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/user-management.html">User Management &amp; Roles</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/system_administration.html">System administration</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="integration.html">Integrations</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="rtir.html">RTIR</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="virustotal.html">VirusTotal</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="cerebrate.html">Cerebrate</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../contribute-support/contribute.html">Contribute &amp; Support</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/reporting-bugs.html">Reporting Bugs</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/features-request.html">Feature Requests</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/how-to-contribute.html">How to contribute ?</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cerberus</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">Cerberus</a></div>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Cerberus</a></li>
+    <li><a href="integration.html">Integrations</a></li>
+    <li><a href="cerebrate.html">Cerebrate</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///home/analyst/Documents/wiki_cerberus/docs-site/cerberus/./modules/ROOT/pages/integrations/cerebrate.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Cerebrate Integration</h1>
+<div class="sect1">
+<h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cerebrate integration provides automated organizational data synchronization between Cerebrate platform and Cerberus. This unidirectional synchronization (Cerebrate → Cerberus) automatically creates entities, manages focal points, and maintains organizational relationships based on Cerebrate data.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuration_setup"><a class="anchor" href="#_configuration_setup"></a>Configuration Setup</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_connection_parameters"><a class="anchor" href="#_connection_parameters"></a>Connection Parameters</h3>
+<div class="paragraph">
+<p><strong>Required Settings:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>URL</strong> - Cerebrate server base URL (e.g., <a href="https://cerebrate.example.com" class="bare">https://cerebrate.example.com</a>)</p>
+</li>
+<li>
+<p><strong>API Key</strong> - Cerebrate authentication token</p>
+</li>
+<li>
+<p><strong>Refresh Frequency</strong> - 1 to 7 days</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Configuration Steps:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Navigate to <strong>Config &gt; Integration</strong> and click <strong>Cerebrate&#8217;s configure button (<a href="https://cerberus.example.com/config/integrations" class="bare">https://cerberus.example.com/config/integrations</a>)</strong></p>
+</li>
+<li>
+<p>Enter Cerebrate API Key</p>
+</li>
+<li>
+<p>Configure synchronization frequency</p>
+</li>
+<li>
+<p>Test API connectivity</p>
+</li>
+<li>
+<p>Activate integration</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/integrations/cerebrate_config.png" alt="cerebrate config">
+</div>
+<div class="title">Figure 1. Cerebrate configuration</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_data_synchronization"><a class="anchor" href="#_data_synchronization"></a>Data Synchronization</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_synchronization_mapping"><a class="anchor" href="#_synchronization_mapping"></a>Synchronization Mapping</h3>
+<div class="paragraph">
+<p><strong>Cerebrate → Cerberus Mapping:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Organizations</strong> → <strong>Entities</strong> (monitored organizations)</p>
+</li>
+<li>
+<p><strong>Individuals</strong> → <strong>Focal Points</strong> (contact persons)</p>
+</li>
+<li>
+<p><strong>Tags</strong> → <strong>Functions</strong> (organizational roles)</p>
+</li>
+<li>
+<p><strong>Alignments</strong> → <strong>Entity-Focal Point Relationships</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Data Direction:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Unidirectional synchronization (Cerebrate → Cerberus only)</p>
+</li>
+<li>
+<p>Cerebrate serves as master data source</p>
+</li>
+<li>
+<p>Local changes may be overwritten during sync</p>
+</li>
+<li>
+<p>Conflict resolution favors Cerebrate data</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_organization_synchronization"><a class="anchor" href="#_organization_synchronization"></a>Organization Synchronization</h3>
+<div class="paragraph">
+<p><strong>Entity Creation and Updates:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Organization Name</strong> → <strong>Entity Name</strong></p>
+</li>
+<li>
+<p><strong>Organization Sector</strong> → <strong>Entity Description</strong></p>
+</li>
+<li>
+<p><strong>Organization URLs</strong> → <strong>Platform Creation</strong></p>
+</li>
+<li>
+<p><strong>Meta Fields</strong> → <strong>Additional Platform URLs</strong></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_individual_synchronization"><a class="anchor" href="#_individual_synchronization"></a>Individual Synchronization</h3>
+<div class="paragraph">
+<p><strong>Focal Point Creation and Updates:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Full Name</strong> → <strong>Focal Point Name</strong></p>
+</li>
+<li>
+<p><strong>Email</strong> → <strong>Focal Point Email</strong> (primary identifier)</p>
+</li>
+<li>
+<p><strong>Meta Fields Phone</strong> → <strong>Focal Point Phone Numbers</strong></p>
+</li>
+<li>
+<p><strong>Tags</strong> → <strong>Function Assignment</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Function Assignment:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Default function for untagged individuals</p>
+</li>
+<li>
+<p>First tag assignment as primary function</p>
+</li>
+<li>
+<p>Function creation from Cerebrate tags</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_synchronization_operations"><a class="anchor" href="#_synchronization_operations"></a>Synchronization Operations</h3>
+<div class="paragraph">
+<p><strong>Scheduled Execution:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Periodic synchronization based on configured frequency</p>
+</li>
+<li>
+<p>Background processing via Celery tasks</p>
+</li>
+<li>
+<p>Status tracking and error reporting</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>On-Demand Refresh:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Manual refresh trigger available</p>
+</li>
+<li>
+<p>Immediate synchronization execution</p>
+</li>
+<li>
+<p>Progress monitoring and status reporting</p>
+</li>
+<li>
+<p>Error handling and resolution</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Rate Limiting:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Manual refresh limited to prevent abuse</p>
+</li>
+<li>
+<p>Cooldown period between manual executions</p>
+</li>
+<li>
+<p>Automatic rate limit enforcement</p>
+</li>
+<li>
+<p>Error notification for excessive requests</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_conflict_resolution"><a class="anchor" href="#_conflict_resolution"></a>Conflict Resolution</h3>
+<div class="paragraph">
+<p><strong>Data Precedence Rules:</strong>
+* Cerebrate data takes precedence over local changes
+* Email addresses serve as unique identifiers
+* Newer Cerebrate data overwrites local modifications
+* Relationship updates favor Cerebrate alignments</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_data_management"><a class="anchor" href="#_data_management"></a>Data Management</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_contact_status_management"><a class="anchor" href="#_contact_status_management"></a>Contact Status Management</h3>
+<div class="paragraph">
+<p><strong>Active Status Control:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Cerebrate individuals → Active focal points</p>
+</li>
+<li>
+<p>Missing individuals → Inactive focal points</p>
+</li>
+<li>
+<p>Status synchronization during each refresh</p>
+</li>
+<li>
+<p>Automated deactivation for removed contacts</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Deactivation Process:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Identify focal points not present in Cerebrate</p>
+</li>
+<li>
+<p>Mark absent contacts as inactive</p>
+</li>
+<li>
+<p>Preserve historical relationship data</p>
+</li>
+<li>
+<p>Maintain audit trail for status changes</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Json Cerebrate
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Cerebrate integration streamlines organizational data management by automatically synchronizing entities, contacts, and relationships, ensuring data consistency and reducing manual administrative overhead while maintaining data quality and security standards.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<script id="site-script" src="../_/js/site.js" data-ui-root-path="../_"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

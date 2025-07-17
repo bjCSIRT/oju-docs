@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VirusTotal Integration :: Cerberus</title>
+    <meta name="description" content="Automated threat detection using VirusTotal API">
+    <meta name="keywords" content="virustotal, malware, scanning, threat-detection, antivirus, automation">
+    <meta name="generator" content="Antora 3.1.10">
+    <link rel="stylesheet" href="../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="..">Cerberus</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ROOT" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Cerberus</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../what-is-cerberus/what-is-cerberus.html">What is Cerberus?</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-cerberus/key-features.html">Key Features</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-cerberus/architecture-overview.html">Architecture Overview</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../installing/installing.html">Installing Cerberus</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/quick-install.html">Quick Install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/config-file.html">Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/first-launch.html">First Launch</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../using-cerberus/using.html">Using Cerberus</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/dashboard.html">Dashboard Walkthrough</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/entity.html">Entity Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/alerts.html">Alerts Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/scan.html">Scan Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/logs-audit.html">Logs &amp; Audit Trail</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/user-management.html">User Management &amp; Roles</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/system_administration.html">System administration</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="integration.html">Integrations</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="rtir.html">RTIR</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="virustotal.html">VirusTotal</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="cerebrate.html">Cerebrate</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../contribute-support/contribute.html">Contribute &amp; Support</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/reporting-bugs.html">Reporting Bugs</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/features-request.html">Feature Requests</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/how-to-contribute.html">How to contribute ?</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cerberus</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">Cerberus</a></div>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Cerberus</a></li>
+    <li><a href="integration.html">Integrations</a></li>
+    <li><a href="virustotal.html">VirusTotal</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///home/analyst/Documents/wiki_cerberus/docs-site/cerberus/./modules/ROOT/pages/integrations/virustotal.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">VirusTotal Integration</h1>
+<div class="sect1">
+<h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>VirusTotal integration provides automated threat detection for monitored platforms. The system periodically scans platform URLs using the VirusTotal API, analyzes results from multiple antivirus vendors, and automatically generates alerts when threats are detected.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuration_setup"><a class="anchor" href="#_configuration_setup"></a>Configuration Setup</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_api_configuration"><a class="anchor" href="#_api_configuration"></a>API Configuration</h3>
+<div class="paragraph">
+<p><strong>Required Settings:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>API Key</strong> - VirusTotal authentication key</p>
+</li>
+<li>
+<p><strong>Scan Frequency</strong> - Automated scanning interval (configurable)</p>
+</li>
+<li>
+<p><strong>Available Scan Frequencies:</strong> - 1 to 7 days</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Configuration Steps:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Navigate to <strong>Config &gt; Integration</strong> and click <strong>VirusTotal&#8217;s configure button (<a href="https://cerberus.example.com/config/integrations" class="bare">https://cerberus.example.com/config/integrations</a>)</strong></p>
+</li>
+<li>
+<p>Enter valid VirusTotal API key</p>
+</li>
+<li>
+<p>Select desired scan frequency</p>
+</li>
+<li>
+<p>Activate integration</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/integrations/virustotal_config.png" alt="virustotal config">
+</div>
+<div class="title">Figure 1. VirusTotal configuration</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_scanning_operations"><a class="anchor" href="#_scanning_operations"></a>Scanning Operations</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_automated_scanning_process"><a class="anchor" href="#_automated_scanning_process"></a>Automated Scanning Process</h3>
+<div class="paragraph">
+<p><strong>Scan Execution:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Periodic scanning based on configured frequency</p>
+</li>
+<li>
+<p>All active platforms included in scan cycle</p>
+</li>
+<li>
+<p>Sequential processing with rate limiting</p>
+</li>
+<li>
+<p>Comprehensive vendor analysis collection</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Scan Workflow:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Retrieve list of active platforms</p>
+</li>
+<li>
+<p>Submit URLs to VirusTotal API</p>
+</li>
+<li>
+<p>Collect multi-vendor analysis results</p>
+</li>
+<li>
+<p>Process threat detection responses</p>
+</li>
+<li>
+<p>Generate alerts for detected threats</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_antivirus_vendor_management"><a class="anchor" href="#_antivirus_vendor_management"></a>Antivirus Vendor Management</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_local_vendor_database"><a class="anchor" href="#_local_vendor_database"></a>Local Vendor Database</h3>
+<div class="paragraph">
+<p><strong>Vendor Information Storage:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Name</strong> - Antivirus vendor name (case-sensitive)</p>
+</li>
+<li>
+<p><strong>Contact</strong> - Primary contact information</p>
+</li>
+<li>
+<p><strong>Comments</strong> - Additional notes and details</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/integrations/vendor_list.png" alt="vendor list">
+</div>
+<div class="title">Figure 2. Vendors list</div>
+</div>
+<div class="paragraph">
+<p><strong>Critical Requirement:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Vendor names must match VirusTotal exactly (case-sensitive)</p>
+</li>
+<li>
+<p>Missing vendors result in limited alert information</p>
+</li>
+<li>
+<p>Regular database updates recommended</p>
+</li>
+<li>
+<p>Accurate vendor contact information essential</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Database Management:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Navigate to <strong>Vendor</strong></p>
+</li>
+<li>
+<p>Add new vendor with exact name matching VirusTotal</p>
+</li>
+<li>
+<p>Include complete contact information</p>
+</li>
+<li>
+<p>Verify case-sensitive name accuracy</p>
+</li>
+<li>
+<p>Save vendor information for alert enrichment</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/integrations/vendor_add.png" alt="vendor add">
+</div>
+<div class="title">Figure 3. Adding vendor</div>
+</div>
+<div class="paragraph">
+<p>VirusTotal integration enhances Cerberus security monitoring by providing automated threat detection, comprehensive vendor analysis, and coordinated incident response for security threats across monitored platforms.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<script id="site-script" src="../_/js/site.js" data-ui-root-path="../_"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Alerts Management :: Cerberus</title>
+    <meta name="description" content="Manage security alerts, filter, update status, and send notifications">
+    <meta name="keywords" content="alerts, management, security, notifications, status, filtering">
+    <meta name="generator" content="Antora 3.1.10">
+    <link rel="stylesheet" href="../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="..">Cerberus</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ROOT" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Cerberus</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../what-is-cerberus/what-is-cerberus.html">What is Cerberus?</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-cerberus/key-features.html">Key Features</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-cerberus/architecture-overview.html">Architecture Overview</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../installing/installing.html">Installing Cerberus</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/quick-install.html">Quick Install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/config-file.html">Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/first-launch.html">First Launch</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="using.html">Using Cerberus</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="dashboard.html">Dashboard Walkthrough</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="entity.html">Entity Management</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="alerts.html">Alerts Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="scan.html">Scan Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="logs-audit.html">Logs &amp; Audit Trail</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="user-management.html">User Management &amp; Roles</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="system_administration.html">System administration</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../integrations/integration.html">Integrations</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/rtir.html">RTIR</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/virustotal.html">VirusTotal</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/cerebrate.html">Cerebrate</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../contribute-support/contribute.html">Contribute &amp; Support</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/reporting-bugs.html">Reporting Bugs</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/features-request.html">Feature Requests</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/how-to-contribute.html">How to contribute ?</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cerberus</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">Cerberus</a></div>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Cerberus</a></li>
+    <li><a href="using.html">Using Cerberus</a></li>
+    <li><a href="alerts.html">Alerts Dashboard</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///home/analyst/Documents/wiki_cerberus/docs-site/cerberus/./modules/ROOT/pages/using-cerberus/alerts.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Alerts Management</h1>
+<div class="sect1">
+<h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Alerts Management interface provides comprehensive control over security alerts generated by Cerberus monitoring. Users can filter, view, update alert status, and send email notifications to relevant stakeholders.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_alert_interface"><a class="anchor" href="#_alert_interface"></a>Alert Interface</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_main_components"><a class="anchor" href="#_main_components"></a>Main Components</h3>
+<div class="paragraph">
+<p><strong>Alerts Histories Table</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>ID</strong> - Unique alert identifier</p>
+</li>
+<li>
+<p><strong>Date</strong> - Alert detection timestamp</p>
+</li>
+<li>
+<p><strong>Entity</strong> - Affected organization</p>
+</li>
+<li>
+<p><strong>Platform URL</strong> - Monitored website/platform</p>
+</li>
+<li>
+<p><strong>Alert Type</strong> - Category of security issue</p>
+</li>
+<li>
+<p><strong>Status</strong> - Current processing state</p>
+</li>
+<li>
+<p><strong>Action</strong> - Available operations</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_alert_status_management"><a class="anchor" href="#_alert_status_management"></a>Alert Status Management</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_status_workflow"><a class="anchor" href="#_status_workflow"></a>Status Workflow</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">New → In Progress → Resolved
+  ↓
+False Positive</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_changing_alert_status"><a class="anchor" href="#_changing_alert_status"></a>Changing Alert Status</h3>
+<div class="paragraph">
+<p><strong>Process:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Locate alert in the table</p>
+</li>
+<li>
+<p>Click status dropdown (currently shows "New", "In Progress", etc.)</p>
+</li>
+<li>
+<p>Select new status from available options</p>
+</li>
+<li>
+<p>Status updates automatically with system logging</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Validation:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Only status field can be modified</p>
+</li>
+<li>
+<p>Status must be different from current value</p>
+</li>
+<li>
+<p>Changes are logged for audit trail</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/using-cerberus/alerts_dashboard.png" alt="alerts dashboard">
+</div>
+<div class="title">Figure 1. Alerts dashboard</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_email_notifications"><a class="anchor" href="#_email_notifications"></a>Email Notifications</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_email_template_system"><a class="anchor" href="#_email_template_system"></a>Email Template System</h3>
+<div class="paragraph">
+<p><strong>Automatic Template Generation:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Alert-specific content generated automatically</p>
+</li>
+<li>
+<p>Includes alert type, affected platform, and technical details</p>
+</li>
+<li>
+<p>Message body contains formatted alert information</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_recipient_management"><a class="anchor" href="#_recipient_management"></a>Recipient Management</h3>
+<div class="paragraph">
+<p><strong>Focal Points Selection:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Only active focal points from the affected entity are available</p>
+</li>
+<li>
+<p>Primary recipient must be a focal point of the entity</p>
+</li>
+<li>
+<p>CC/BCC can include other focal points or system users</p>
+</li>
+<li>
+<p>Email validation ensures recipient authenticity</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Email Composition:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Click email icon for the alert</p>
+</li>
+<li>
+<p>Select recipients from available focal points</p>
+</li>
+<li>
+<p>Review pre-generated subject and message</p>
+</li>
+<li>
+<p>Add CC/BCC recipients if needed</p>
+</li>
+<li>
+<p>Attach files if required (max 1MB per file)</p>
+</li>
+<li>
+<p>Send notification</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/using-cerberus/email_notification.png" alt="email notification">
+</div>
+<div class="title">Figure 2. Email notification</div>
+</div>
+<div class="paragraph">
+<p>The Alerts Management interface provides comprehensive control over security incident response, enabling efficient alert processing, stakeholder communication, and incident tracking across monitored organizations.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<script id="site-script" src="../_/js/site.js" data-ui-root-path="../_"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

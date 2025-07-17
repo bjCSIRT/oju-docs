@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Before you begin :: Cerberus</title>
+    <meta name="description" content="Complete installation guide for Cerberus cybersecurity platform">
+    <meta name="keywords" content="installation, docker, ssl, deployment, setup, free">
+    <meta name="generator" content="Antora 3.1.10">
+    <link rel="stylesheet" href="../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="..">Cerberus</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ROOT" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Cerberus</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../what-is-cerberus/what-is-cerberus.html">What is Cerberus?</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-cerberus/key-features.html">Key Features</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-cerberus/architecture-overview.html">Architecture Overview</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="installing.html">Installing Cerberus</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="quick-install.html">Quick Install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="config-file.html">Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="first-launch.html">First Launch</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../using-cerberus/using.html">Using Cerberus</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/dashboard.html">Dashboard Walkthrough</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/entity.html">Entity Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/alerts.html">Alerts Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/scan.html">Scan Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/logs-audit.html">Logs &amp; Audit Trail</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/user-management.html">User Management &amp; Roles</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-cerberus/system_administration.html">System administration</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../integrations/integration.html">Integrations</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/rtir.html">RTIR</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/virustotal.html">VirusTotal</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/cerebrate.html">Cerebrate</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../contribute-support/contribute.html">Contribute &amp; Support</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/reporting-bugs.html">Reporting Bugs</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/features-request.html">Feature Requests</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/how-to-contribute.html">How to contribute ?</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cerberus</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">Cerberus</a></div>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Cerberus</a></li>
+    <li><a href="installing.html">Installing Cerberus</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///home/analyst/Documents/wiki_cerberus/docs-site/cerberus/./modules/ROOT/pages/installing/installing.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Before you begin</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Complete installation guide to deploy Cerberus in production. The installation uses Docker for automated configuration with SSL certificates, database setup, and all required services.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_installation_process"><a class="anchor" href="#_installation_process"></a>Installation Process</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cerberus installation follows a streamlined 4-step process:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Prerequisites Verification</strong> - System configuration and required tools</p>
+</li>
+<li>
+<p><strong>Quick Installation</strong> - Automated script with interactive configuration</p>
+</li>
+<li>
+<p><strong>Advanced Configuration</strong> - Environment customization and parameter tuning</p>
+</li>
+<li>
+<p><strong>First Launch</strong> - Verification procedures and initial setup</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_system_requirements"><a class="anchor" href="#_system_requirements"></a>System Requirements</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Minimum Configuration</strong> :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Docker Engine 20.10+ and Docker Compose 1.29+</p>
+</li>
+<li>
+<p>2 GB RAM (4 GB recommended for production)</p>
+</li>
+<li>
+<p>40 GB available disk space</p>
+</li>
+<li>
+<p>Ports 80 and 443 available</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Supported Systems</strong> :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Ubuntu 18.04+ / Debian 10+</p>
+</li>
+<li>
+<p>CentOS/RHEL 7+ / Fedora 32+</p>
+</li>
+<li>
+<p>Windows 10+ with WSL2</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_automated_installation_features"><a class="anchor" href="#_automated_installation_features"></a>Automated Installation Features</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The installation script automatically configures:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Docker Services</strong> : Django backend, Vue.js frontend, Nginx, PostgreSQL, Redis, Celery</p>
+</li>
+<li>
+<p><strong>SSL Certificates</strong> : Automatic Let&#8217;s Encrypt with self-signed fallback</p>
+</li>
+<li>
+<p><strong>Database</strong> : PostgreSQL with securely generated credentials</p>
+</li>
+<li>
+<p><strong>Cache</strong> : Redis configuration</p>
+</li>
+<li>
+<p><strong>Reverse Proxy</strong> : Nginx with SSL and security headers</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_in_this_section"><a class="anchor" href="#_in_this_section"></a>In This Section</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a><a href="prerequisites.html" class="xref page">Prerequisites</a></h3>
+<div class="paragraph">
+<p>Detailed system configuration for Linux and Windows. Required tools verification and environment preparation.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_quick_install"><a class="anchor" href="#_quick_install"></a><a href="quick-install.html" class="xref page">Quick Install</a></h3>
+<div class="paragraph">
+<p>Automated installation script with interactive configuration. Secure credential generation and automatic SSL certificate setup.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configuration_file"><a class="anchor" href="#_configuration_file"></a><a href="config-file.html" class="xref page">Configuration File</a></h3>
+<div class="paragraph">
+<p><code>.env</code> file configuration : environment variables, SSL settings, database parameters, and customization options.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_first_launch"><a class="anchor" href="#_first_launch"></a><a href="first-launch.html" class="xref page">First Launch</a></h3>
+<div class="paragraph">
+<p>Post-installation verification and initial setup. Interface access, admin configuration, and functionality testing.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<script id="site-script" src="../_/js/site.js" data-ui-root-path="../_"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

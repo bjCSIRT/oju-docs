@@ -1,0 +1,46 @@
+= Reporting Bugs
+:description: Quick guide for effective bug reporting
+:keywords: bugs, issues, reporting, troubleshooting
+
+== Bug Report Template
+
+[source,text]
+----
+**Title:** Brief issue description
+
+**Severity:** Critical/High/Medium/Low
+
+**Environment:**
+
+- OS: Windows/Linux/macOS
+- Browser: Chrome/Firefox/Safari (version)
+- Cerberus Version: x.x.x
+
+**Steps to Reproduce:**
+
+1. Step one
+2. Step two
+3. Issue occurs
+
+**Expected Result:** What should happen
+**Actual Result:** What actually happens
+
+**Frequency:** Always/Sometimes/Once
+**Impact:** How it affects operations
+
+**Additional Info:**
+
+- Error messages (exact text)
+- Screenshots (if UI issue)
+- Log entries (if available)
+----
+
+
+== Security Issues
+
+**For security vulnerabilities:**
+
+- Use secure/private reporting channels
+- Include vulnerability type and impact
+- Provide proof of concept
+- **Don't publicly disclose until patched**

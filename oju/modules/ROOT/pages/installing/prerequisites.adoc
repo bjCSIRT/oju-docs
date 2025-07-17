@@ -1,0 +1,106 @@
+= Prerequisites
+:description: System requirements and configuration for Cerberus installation
+:keywords: prerequisites, docker, system, requirements, linux, windows, ssl, dns
+
+== System Requirements
+
+=== Hardware Specifications
+[cols="1,2,3"]
+|===
+|Component |Minimum |Recommended
+
+|**RAM**
+|2 GB
+|4 GB (production environments)
+
+|**Storage**
+|10 GB free space
+|20 GB (with logs and backups)
+
+|**Processor**
+|x64 compatible architecture
+|Multi-core recommended
+
+|**Network**
+|Stable internet connection
+|High bandwidth 
+|===
+
+=== Supported Platforms
+* **Linux** 
+* **Windows** 
+
+== Software Dependencies
+
+=== Required Components
+* **Docker Engine** (20.10.0+)
+* **Docker Compose** (1.29.0+)
+* **OpenSSL** (1.1.1+)
+
+== Network Configuration
+
+=== Port Requirements
+[cols="1,2,3"]
+|===
+|Port |Protocol |Purpose
+
+|**80**
+|HTTP
+|Web interface and HTTP redirects
+
+|**443**
+|HTTPS
+|Secure web interface and API
+
+|===
+
+== DNS Configuration
+
+=== Production Setup
+For Let's Encrypt SSL certificates, configure these DNS records:
+
+[cols="2,2,3"]
+|===
+|Record Type |Name |Value
+
+|**A**
+|yourdomain.com
+|Server IP address
+
+|**A**
+|www.yourdomain.com
+|Server IP address
+
+|**CNAME**
+|*.yourdomain.com
+|yourdomain.com (optional for subdomains)
+|===
+
+=== Development/Testing Setup
+For non-existent domains or local testing, add entries to your hosts file:
+
+**Linux:**
+[source,bash]
+----
+# Edit hosts file
+sudo nano /etc/hosts
+
+# Add domain entries
+127.0.0.1 yourdomain.local
+127.0.0.1 www.yourdomain.local
+----
+
+**Windows:**
+[source,cmd]
+----
+# Open PowerShell as Administrator
+notepad C:\Windows\System32\drivers\etc\hosts
+
+# Add domain entries
+127.0.0.1 yourdomain.local
+127.0.0.1 www.yourdomain.local
+----
+
+
+== Next Steps
+Once all prerequisites are verified, proceed to xref:installing/quick-install.adoc[Quick Install] for the automated installation process.

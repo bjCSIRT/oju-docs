@@ -1,0 +1,13 @@
+site:
+  title: Cerberus
+  start_page: ROOT::index.adoc
+content:
+  sources:
+  - url: ./cerberus
+    start_path: .
+    branches: HEAD
+ui:
+  bundle:
+    url: ./ui-bundle.zip
+output:
+  dir: ./public

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>System Administration :: Cerberus</title>
+    <meta name="description" content="Configure system settings and email notifications for Cerberus monitoring">
+    <meta name="keywords" content="administration, configuration, system, email, smtp, settings">
+    <meta name="generator" content="Antora 3.1.10">
+    <link rel="stylesheet" href="../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="..">Cerberus</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ROOT" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Cerberus</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../what-is-cerberus/what-is-cerberus.html">What is Cerberus?</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-cerberus/key-features.html">Key Features</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-cerberus/architecture-overview.html">Architecture Overview</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../installing/installing.html">Installing Cerberus</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/quick-install.html">Quick Install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/config-file.html">Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/first-launch.html">First Launch</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="using.html">Using Cerberus</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="dashboard.html">Dashboard Walkthrough</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="entity.html">Entity Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="alerts.html">Alerts Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="scan.html">Scan Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="logs-audit.html">Logs &amp; Audit Trail</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="user-management.html">User Management &amp; Roles</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="system_settings.html">System settings</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../integrations/integration.html">Integrations</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/rtir.html">RTIR</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/virustotal.html">VirusTotal</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/cerebrate.html">Cerebrate</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../contribute-support/contribute.html">Contribute &amp; Support</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/reporting-bugs.html">Reporting Bugs</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/features-request.html">Feature Requests</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/how-to-contribute.html">How to contribute ?</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Cerberus</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">Cerberus</a></div>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Cerberus</a></li>
+    <li><a href="using.html">Using Cerberus</a></li>
+    <li><a href="system_settings.html">System settings</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///home/analyst/Documents/wiki_cerberus/docs-site/cerberus/./modules/ROOT/pages/using-cerberus/system_settings.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">System Administration</h1>
+<div class="sect1">
+<h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>System Administration provides centralized management of Cerberus core settings and email configurations. This section covers system-wide parameters that affect monitoring behavior, network connectivity, and notification capabilities.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_system_configuration"><a class="anchor" href="#_system_configuration"></a>System Configuration</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_general_settings"><a class="anchor" href="#_general_settings"></a>General Settings</h3>
+<div class="paragraph">
+<p><strong>Core System Parameters:</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Email Configuration:</strong>
+* <strong>email</strong> - Primary system email address for notifications
+* Purpose: Default sender address for system notifications
+* Format: Valid email address format required</p>
+</div>
+<div class="paragraph">
+<p><strong>Network Settings:</strong>
+* <strong>proxy</strong> - List of proxy servers for HTTP requests
+* Purpose: Route monitoring traffic through specified proxies
+* Format: Array of proxy URLs (e.g., ["http://proxy1:8080", "http://proxy2:8080"])
+* Validation: Automatically removes duplicates</p>
+</div>
+<div class="paragraph">
+<p><strong>DNS Configuration:</strong>
+* <strong>dns_server</strong> - List of DNS servers for domain resolution
+* Purpose: Custom DNS servers for domain lookups and validation
+* Format: Array of IP addresses (e.g., ["8.8.8.8", "1.1.1.1"])
+* Validation: Automatically removes duplicates</p>
+</div>
+<div class="paragraph">
+<p><strong>Scanning Parameters:</strong>
+* <strong>scan_frequency</strong> - Interval between monitoring scans
+* Purpose: Controls how often platforms are monitored
+* Format: Numeric value (minutes/hours based on system configuration)</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>user_agent</strong> - HTTP User-Agent string for web requests</p>
+</li>
+<li>
+<p>Purpose: Identifies Cerberus in HTTP requests to monitored platforms</p>
+</li>
+<li>
+<p>Format: Standard User-Agent string format</p>
+</li>
+<li>
+<p><strong>max_worker</strong> - Maximum number of concurrent scanning workers</p>
+</li>
+<li>
+<p>Purpose: Controls system resource usage and scanning parallelism</p>
+</li>
+<li>
+<p>Format: Positive integer value</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Alert Settings:</strong>
+* <strong>receive_alert</strong> - Global alert reception toggle
+* Purpose: Enable/disable system-wide alert generation
+* Format: Boolean (true/false)</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_toggle_controls"><a class="anchor" href="#_toggle_controls"></a>Toggle Controls</h3>
+<div class="paragraph">
+<p><strong>Proxy Management:</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>use_proxy:</strong>
+* Controls whether monitoring uses configured proxy servers
+* Toggle action automatically tests proxy connectivity when enabled
+* System logs proxy activation/deactivation events</p>
+</div>
+<div class="paragraph">
+<p><strong>use_host_on_proxy_fail:</strong>
+* Determines fallback behavior when proxy connections fail
+* When enabled: Falls back to direct connection if proxy unavailable
+* When disabled: Monitoring fails if proxy is unreachable</p>
+</div>
+<div class="paragraph">
+<p><strong>receive_alert:</strong>
+* Master switch for alert generation across the system
+* When disabled: No alerts are generated regardless of detection
+* When enabled: Alerts generated based on monitoring results</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configuration_management"><a class="anchor" href="#_configuration_management"></a>Configuration Management</h3>
+<div class="paragraph">
+<p><strong>Updating Settings:</strong>
+1. Navigate to System Configuration page
+2. Modify desired parameters
+3. System validates input format and values
+4. Changes are applied immediately with system logging
+5. Cache invalidation occurs for DNS settings</p>
+</div>
+<div class="paragraph">
+<p><strong>Validation Rules:</strong>
+* Only specified fields can be modified
+* Lists (proxy, dns_server) must be valid arrays
+* Email addresses must follow standard format
+* Numeric values must be positive integers
+* Boolean toggles accept true/false values</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>All configuration changes are logged in the system audit trail with user identification and timestamp.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_email_configuration"><a class="anchor" href="#_email_configuration"></a>Email Configuration</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_smtp_settings"><a class="anchor" href="#_smtp_settings"></a>SMTP Settings</h3>
+<div class="paragraph">
+<p><strong>Server Configuration:</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>smtp_server:</strong>
+* SMTP server hostname or IP address
+* Purpose: Outgoing mail server for notifications
+* Example: "smtp.gmail.com", "mail.company.com"</p>
+</div>
+<div class="paragraph">
+<p><strong>smtp_port:</strong>
+* SMTP server port number
+* Purpose: Network port for SMTP connection
+* Common values: 25, 465 (SSL), 587 (TLS)</p>
+</div>
+<div class="paragraph">
+<p><strong>Security Settings:</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>use_tls:</strong>
+* Enable STARTTLS encryption for SMTP connection
+* Purpose: Secure email transmission using TLS
+* Typically used with port 587</p>
+</div>
+<div class="paragraph">
+<p><strong>use_ssl:</strong>
+* Enable SSL/TLS encryption from connection start
+* Purpose: Secure email transmission using SSL
+* Typically used with port 465</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>TLS and SSL are mutually exclusive. Configure only one encryption method based on your SMTP server requirements.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>Authentication:</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>email_host:</strong>
+* Username for SMTP authentication
+* Purpose: Account credentials for sending emails
+* Usually an email address or username</p>
+</div>
+<div class="paragraph">
+<p><strong>email_password:</strong>
+* Password for SMTP authentication
+* Purpose: Account credentials for sending emails
+* Stored securely in the system</p>
+</div>
+<div class="paragraph">
+<p><strong>Sender Information:</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>default_sender_name:</strong>
+* Display name for outgoing emails
+* Purpose: Human-readable sender identification
+* Example: "Cerberus Security Monitor"</p>
+</div>
+<div class="paragraph">
+<p><strong>is_active:</strong>
+* Master switch for email functionality
+* Purpose: Enable/disable all email notifications
+* When disabled: No emails are sent regardless of alerts</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_email_configuration_management"><a class="anchor" href="#_email_configuration_management"></a>Email Configuration Management</h3>
+<div class="paragraph">
+<p><strong>Connection Testing:</strong>
+* Automatic SMTP connection test when saving configuration
+* Validates server connectivity, authentication, and security settings
+* Configuration is rejected if connection test fails
+* Test includes DNS resolution, port connectivity, and authentication</p>
+</div>
+<div class="paragraph">
+<p><strong>Toggle Status:</strong>
+* Email system can be enabled/disabled without changing configuration
+* Enabling inactive configuration triggers automatic connection test
+* System prevents activation if connection test fails
+* Status changes are logged for audit purposes</p>
+</div>
+<div class="paragraph">
+<p><strong>Rate Limiting:</strong>
+* Email configuration updates limited to 2 attempts per 60 seconds
+* Prevents excessive server testing and potential account lockouts
+* Limit applies to configuration updates, not toggle operations
+* Rate limit reset after timeout period</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Email configuration changes trigger immediate connection testing. Ensure SMTP credentials and server settings are correct to avoid account lockouts.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configuration_process"><a class="anchor" href="#_configuration_process"></a>Configuration Process</h3>
+<div class="paragraph">
+<p><strong>Setting Up Email:</strong>
+1. Navigate to Email Configuration page
+2. Enter SMTP server details (hostname, port)
+3. Select appropriate encryption method (TLS or SSL)
+4. Provide authentication credentials
+5. Set sender name for outgoing emails
+6. Save configuration (triggers automatic testing)
+7. Activate email system using toggle if test successful</p>
+</div>
+<div class="paragraph">
+<p><strong>Troubleshooting Connection Issues:</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Common Problems:</strong>
+* <strong>DNS errors</strong>: Verify SMTP server hostname
+* <strong>Connection timeout</strong>: Check port number and firewall settings
+* <strong>Authentication failed</strong>: Verify username/password credentials
+* <strong>Connection refused</strong>: Confirm server availability and port accessibility</p>
+</div>
+<div class="paragraph">
+<p><strong>Testing Process:</strong>
+* System resolves SMTP server hostname
+* Establishes connection on specified port
+* Negotiates encryption if configured
+* Performs authentication with provided credentials
+* Reports success or specific error message</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_security_considerations"><a class="anchor" href="#_security_considerations"></a>Security Considerations</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_system_security"><a class="anchor" href="#_system_security"></a>System Security</h3>
+<div class="paragraph">
+<p><strong>Network Configuration:</strong>
+* Proxy settings can expose traffic to third-party servers
+* DNS server changes affect all domain resolution
+* Monitor proxy and DNS server trustworthiness</p>
+</div>
+<div class="paragraph">
+<p><strong>Access Control:</strong>
+* Configuration changes require appropriate permissions
+* All modifications are logged with user identification
+* Critical settings should be reviewed before changes</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_email_security"><a class="anchor" href="#_email_security"></a>Email Security</h3>
+<div class="paragraph">
+<p><strong>Credential Protection:</strong>
+* SMTP passwords stored securely in database
+* Use dedicated email accounts for system notifications
+* Consider application-specific passwords for enhanced security</p>
+</div>
+<div class="paragraph">
+<p><strong>Encryption Best Practices:</strong>
+* Use TLS/SSL encryption for all SMTP connections
+* Verify certificate validity for SMTP servers
+* Prefer TLS (port 587) over legacy unencrypted connections</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_operational_guidelines"><a class="anchor" href="#_operational_guidelines"></a>Operational Guidelines</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_system_maintenance"><a class="anchor" href="#_system_maintenance"></a>System Maintenance</h3>
+<div class="paragraph">
+<p><strong>Regular Review:</strong>
+* Verify proxy server availability and performance
+* Monitor DNS server responsiveness
+* Review scanning frequency based on system load
+* Adjust worker count based on resource utilization</p>
+</div>
+<div class="paragraph">
+<p><strong>Change Management:</strong>
+* Test configuration changes in non-production environments
+* Document configuration changes for audit purposes
+* Monitor system behavior after configuration updates
+* Maintain backup of working configurations</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_email_management"><a class="anchor" href="#_email_management"></a>Email Management</h3>
+<div class="paragraph">
+<p><strong>Email Monitoring:</strong>
+* Verify email delivery to intended recipients
+* Monitor SMTP server performance and availability
+* Review email logs for delivery issues
+* Test email functionality periodically</p>
+</div>
+<div class="paragraph">
+<p><strong>Best Practices:</strong>
+* Use dedicated email accounts for system notifications
+* Configure appropriate sender names for clarity
+* Monitor rate limiting to avoid configuration lockouts
+* Maintain current SMTP credentials</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_troubleshooting"><a class="anchor" href="#_troubleshooting"></a>Troubleshooting</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_system_configuration_issues"><a class="anchor" href="#_system_configuration_issues"></a>System Configuration Issues</h3>
+<div class="paragraph">
+<p><strong>Proxy Problems:</strong>
+* Test proxy connectivity independently
+* Verify proxy authentication if required
+* Check proxy server capacity and performance
+* Review firewall rules for proxy traffic</p>
+</div>
+<div class="paragraph">
+<p><strong>DNS Issues:</strong>
+* Test DNS server responsiveness
+* Verify DNS server accessibility from system
+* Check DNS resolution for monitored domains
+* Consider DNS server redundancy</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_email_configuration_issues"><a class="anchor" href="#_email_configuration_issues"></a>Email Configuration Issues</h3>
+<div class="paragraph">
+<p><strong>Connection Failures:</strong>
+* Verify SMTP server hostname and port
+* Test network connectivity to SMTP server
+* Check firewall rules for SMTP traffic
+* Confirm SMTP server supports configured encryption</p>
+</div>
+<div class="paragraph">
+<p><strong>Authentication Problems:</strong>
+* Verify username and password accuracy
+* Check for account lockouts or restrictions
+* Confirm account has SMTP sending permissions
+* Consider application-specific passwords</p>
+</div>
+<div class="paragraph">
+<p><strong>Rate Limiting:</strong>
+* Wait for rate limit timeout before retry
+* Verify configuration accuracy before multiple attempts
+* Use toggle function for status changes (not rate limited)
+* Plan configuration changes to minimize test attempts</p>
+</div>
+<div class="paragraph">
+<p>System Administration provides essential control over Cerberus monitoring behavior and notification capabilities, ensuring optimal performance and reliable alert delivery.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<script id="site-script" src="../_/js/site.js" data-ui-root-path="../_"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
