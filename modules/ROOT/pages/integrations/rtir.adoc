@@ -1,0 +1,74 @@
+:imagesdir: ../assets/images
+= RTIR Integration
+:description: Request Tracker for Incident Response integration guide
+:keywords: rtir, incident-response, tickets, automation, stakeholders
+
+== Overview
+
+RTIR (Request Tracker for Incident Response) integration automates incident ticket creation and stakeholder notification. When security alerts are detected, Cerberus automatically creates detailed tickets in RTIR and notifies relevant stakeholders through their designated focal points.
+
+== Configuration Setup
+
+=== Connection Parameters
+
+**Required Settings:**
+
+* **URL** - RTIR server address (e.g., https://rtir.example.com)
+* **Username** - RTIR authentication username
+* **Password** - RTIR authentication password
+
+**Configuration Steps:**
+
+. Navigate to **Config > Integration** and click **RTIR's configure button (https://cerberus.example.com/config/integrations)**
+. Enter RTIR server connection details
+. Save configuration
+. Activate integration
+
+.RTIR configuration
+image::integrations/rtir_config.png[]
+
+
+== Ticket Creation Process
+
+=== Automatic Ticket Generation
+
+**Trigger Events:**
+
+* Security alert detection (SSL, Domain, Defacement, Availability, VirusTotal)
+* Alert processing and classification
+* Stakeholder identification via entity focal points
+* Automatic ticket creation in RTIR
+
+**Ticket Content:**
+
+* **Subject** - Alert type and affected platform URL
+* **Content** - Detailed alert information and analysis
+* **Requestors** - Entity focal points (active contacts only)
+* **Priority** - Based on alert severity and type
+* **Status** - Initial status set to "new"
+
+== Troubleshooting
+
+=== Common Issues
+
+**Connection Problems:**
+
+* **Server Unreachable** - Verify RTIR URL accessibility
+* **Authentication Failed** - Check username/password accuracy
+* **Network Issues** - Confirm firewall and proxy settings
+* **SSL Certificate** - Validate RTIR server certificate
+
+**Ticket Creation Failures:**
+
+* **Missing Focal Points** - Ensure entity has active contacts
+* **Invalid Queue** - Verify RTIR queue configuration
+* **Permission Issues** - Check RTIR user permissions
+* **Data Validation** - Review ticket content formatting
+
+
+
+RTIR integration ensures seamless incident response coordination by automatically creating detailed tickets and notifying appropriate stakeholders, enabling rapid response to security incidents across monitored organizations.
+
+[IMPORTANT]
+
+While the tool can create tickets in RTIR and resolve alerts on its own dashboard when issues are addressed, it does not automatically resolve tickets within RTIR itself. For troubleshooting ticket creation or other integration issues, detailed logs are available in the workers container.
