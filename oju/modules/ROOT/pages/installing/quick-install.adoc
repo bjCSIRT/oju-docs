@@ -58,9 +58,9 @@ Email required for free SSL certificate acquisition
 
 Configuration for self-signed certificate fallback:
 
-* Country Code (2 letters) : `US`
-* State/Province : `California`
-* City : `San Francisco`
+* Country Code (2 letters) : `BJ`
+* State/Province : `Littoral`
+* City : `Cotonou`
 * Organization : `Your Company`
 * Organizational Unit : `IT Department`
 

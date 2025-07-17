@@ -13,7 +13,7 @@ Help improve Cerberus security monitoring tool. Report issues, suggest enhanceme
 |Action |Link
 
 |**Report Bug**
-|xref:contribute-support/reporting-bugs.adoc[Bug Report Form]
+|xref:contribute-support/reporting-bugs.adoc[Reporting Bugs]
 
 |**Request Feature**
 |xref:contribute-support/features-request.adoc[Feature Request]
