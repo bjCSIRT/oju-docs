@@ -1,9 +1,9 @@
 site:
-  title: Cerberus
+  title: OJU
   start_page: ROOT::index.adoc
 content:
   sources:
-  - url: ./cerberus
+  - url: ./oju
     start_path: .
     branches: HEAD
 ui:

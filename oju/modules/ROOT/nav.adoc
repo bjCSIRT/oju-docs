@@ -1,4 +1,4 @@
-= Cerberus
+= OJU
 
 * xref:what-is-cerberus/what-is-cerberus.adoc[What is Cerberus?]
 ** xref:what-is-cerberus/key-features.adoc[Key Features]
