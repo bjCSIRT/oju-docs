@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>User Management &amp; Roles :: Oju</title>
+    <meta name="description" content="Complete user administration and permission management system">
+    <meta name="keywords" content="users, roles, permissions, authentication, access-control, security">
+    <meta name="generator" content="Antora 3.1.10">
+    <link rel="stylesheet" href="../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="..">Oju</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ROOT" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Oju</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../what-is-oju/what-is-oju.html">What is Oju?</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-oju/key-features.html">Key Features</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-oju/architecture-overview.html">Architecture Overview</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../installing/installing.html">Installing Oju</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/quick-install.html">Quick Install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/config-file.html">Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/first-launch.html">First Launch</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="using.html">Using Oju</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="dashboard.html">Dashboard Walkthrough</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="entity.html">Entity Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="alerts.html">Alerts Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="scan.html">Scan Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="logs-audit.html">Logs &amp; Audit Trail</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="user-management.html">User Management &amp; Roles</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="system_administration.html">System administration</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../integrations/integration.html">Integrations</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/rtir.html">RTIR</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/virustotal.html">VirusTotal</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/cerebrate.html">Cerebrate</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../contribute-support/contribute.html">Contribute &amp; Support</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/reporting-bugs.html">Reporting Bugs</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/features-request.html">Feature Requests</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/how-to-contribute.html">How to contribute ?</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Oju</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">Oju</a></div>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Oju</a></li>
+    <li><a href="using.html">Using Oju</a></li>
+    <li><a href="user-management.html">User Management &amp; Roles</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///home/analyst/Documents/wiki_Oju/docs-site/Oju/./modules/ROOT/pages/using-oju/user-management.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">User Management &amp; Roles</h1>
+<div class="sect1">
+<h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>User Management &amp; Roles provides comprehensive access control for Oju. Manage user accounts, assign roles with granular permissions, and maintain secure authentication systems to ensure appropriate access levels across your organization.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_user_management"><a class="anchor" href="#_user_management"></a>User Management</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_creating_users"><a class="anchor" href="#_creating_users"></a>Creating Users</h3>
+<div class="paragraph">
+<p><strong>Administrator Process:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Navigate to <strong>Users</strong> in main menu</p>
+</li>
+<li>
+<p>Click <strong>Add User</strong></p>
+</li>
+<li>
+<p>Complete user information:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Email</strong> - Primary identifier and login</p>
+</li>
+<li>
+<p><strong>Username</strong> - Display name</p>
+</li>
+<li>
+<p><strong>Full Name</strong> - Complete name</p>
+</li>
+<li>
+<p><strong>Password</strong> - Secure password</p>
+</li>
+<li>
+<p><strong>Confirm Password</strong> - Password verification</p>
+</li>
+<li>
+<p><strong>Role</strong> - Assigned permissions set</p>
+</li>
+<li>
+<p><strong>Status</strong> - Active/Inactive account</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Save to create account</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Required Information:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Valid email address (unique)</p>
+</li>
+<li>
+<p>Secure password meeting requirements</p>
+</li>
+<li>
+<p>Role assignment for permissions</p>
+</li>
+<li>
+<p>Account status selection</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/using-oju/create_user.png" alt="create user">
+</div>
+<div class="title">Figure 1. Create user</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_user_registration"><a class="anchor" href="#_user_registration"></a>User Registration</h3>
+<div class="paragraph">
+<p><strong>Self-Registration Process:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Access registration page</p>
+</li>
+<li>
+<p>Provide required information:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Email address</p>
+</li>
+<li>
+<p>Username</p>
+</li>
+<li>
+<p>Full name</p>
+</li>
+<li>
+<p>Password</p>
+</li>
+<li>
+<p>Password confirmation</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Submit registration request</p>
+</li>
+<li>
+<p>Account created in inactive state</p>
+</li>
+<li>
+<p>Administrator activation required</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Account Activation:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>New accounts inactive by default</p>
+</li>
+<li>
+<p>Administrator review and activation required</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/using-oju/user_registration.png" alt="user registration">
+</div>
+<div class="title">Figure 2. User registration</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_user_profile_management"><a class="anchor" href="#_user_profile_management"></a>User Profile Management</h3>
+<div class="paragraph">
+<p><strong>Profile Updates:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Access <strong>Profile</strong> or user settings</p>
+</li>
+<li>
+<p>Update editable information:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Username</p>
+</li>
+<li>
+<p>Email address</p>
+</li>
+<li>
+<p>Full name</p>
+</li>
+<li>
+<p>Current password verification required</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Save changes to update profile</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Password Changes:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Navigate to <strong>Change Password</strong></p>
+</li>
+<li>
+<p>Provide required information:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Current password</p>
+</li>
+<li>
+<p>New password</p>
+</li>
+<li>
+<p>Confirm new password</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Submit to update password</p>
+</li>
+<li>
+<p>All sessions terminated upon change</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_account_status_management"><a class="anchor" href="#_account_status_management"></a>Account Status Management</h3>
+<div class="paragraph">
+<p><strong>User Status Control:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Active</strong> - Full system access based on role</p>
+</li>
+<li>
+<p><strong>Inactive</strong> - Access denied, sessions terminated</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_role_management"><a class="anchor" href="#_role_management"></a>Role Management</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_understanding_roles"><a class="anchor" href="#_understanding_roles"></a>Understanding Roles</h3>
+<div class="paragraph">
+<p><strong>Role Structure:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Collection of specific permissions</p>
+</li>
+<li>
+<p>Granular access control</p>
+</li>
+<li>
+<p>Feature-based restrictions</p>
+</li>
+<li>
+<p>Hierarchical permission model</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Built-in Roles:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Super Admin</strong> - Complete system access</p>
+</li>
+<li>
+<p><strong>Custom Roles</strong> - Organization-specific permissions</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_creating_roles"><a class="anchor" href="#_creating_roles"></a>Creating Roles</h3>
+<div class="paragraph">
+<p><strong>Role Creation Process:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Navigate to <strong>Confid &gt; Roles</strong> management</p>
+</li>
+<li>
+<p>Click <strong>Add Role</strong></p>
+</li>
+<li>
+<p>Define role properties:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Name</strong> - Descriptive role title</p>
+</li>
+<li>
+<p><strong>Description</strong> - Role purpose and scope</p>
+</li>
+<li>
+<p><strong>Permissions</strong> - Specific access rights</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Select appropriate permissions</p>
+</li>
+<li>
+<p>Save to create role</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Permission Selection:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Choose from available permissions list</p>
+</li>
+<li>
+<p>Multiple permission assignment</p>
+</li>
+<li>
+<p>Permission validation on save</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_role_configuration"><a class="anchor" href="#_role_configuration"></a>Role Configuration</h3>
+<div class="paragraph">
+<p><strong>Permission Categories:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Dashboard</strong> - Monitoring and statistics access</p>
+</li>
+<li>
+<p><strong>Entities</strong> - Organization management</p>
+</li>
+<li>
+<p><strong>Platforms</strong> - Website monitoring control</p>
+</li>
+<li>
+<p><strong>Alerts</strong> - Incident management</p>
+</li>
+<li>
+<p><strong>Scans</strong> - Monitoring configuration</p>
+</li>
+<li>
+<p><strong>Users</strong> - Account administration</p>
+</li>
+<li>
+<p><strong>Roles</strong> - Permission management</p>
+</li>
+<li>
+<p><strong>Logs</strong> - Audit trail access</p>
+</li>
+<li>
+<p><strong>Config</strong> - System configuration</p>
+</li>
+<li>
+<p><strong>Integrations</strong> - External service management</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Granular Permissions:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>View, create, edit, delete operations</p>
+</li>
+<li>
+<p>Feature-specific access controls</p>
+</li>
+<li>
+<p>Administrative function restrictions</p>
+</li>
+<li>
+<p>Export and reporting permissions</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The User Management &amp; Roles system ensures secure, controlled access to Oju while maintaining operational flexibility and compliance requirements.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<script id="site-script" src="../_/js/site.js" data-ui-root-path="../_"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

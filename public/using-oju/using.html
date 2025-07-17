@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Using Oju :: Oju</title>
+    <meta name="description" content="Complete guide to using Oju cybersecurity monitoring platform">
+    <meta name="keywords" content="user-guide, monitoring, alerts, entities, cybersecurity">
+    <meta name="generator" content="Antora 3.1.10">
+    <link rel="stylesheet" href="../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="..">Oju</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ROOT" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Oju</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../what-is-oju/what-is-oju.html">What is Oju?</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-oju/key-features.html">Key Features</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../what-is-oju/architecture-overview.html">Architecture Overview</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../installing/installing.html">Installing Oju</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/prerequisites.html">Prerequisites</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/quick-install.html">Quick Install</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/config-file.html">Configuration File</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../installing/first-launch.html">First Launch</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="using.html">Using Oju</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="dashboard.html">Dashboard Walkthrough</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="entity.html">Entity Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="alerts.html">Alerts Dashboard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="scan.html">Scan Management</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="logs-audit.html">Logs &amp; Audit Trail</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="user-management.html">User Management &amp; Roles</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="system_administration.html">System administration</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../integrations/integration.html">Integrations</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/rtir.html">RTIR</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/virustotal.html">VirusTotal</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../integrations/cerebrate.html">Cerebrate</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../contribute-support/contribute.html">Contribute &amp; Support</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/reporting-bugs.html">Reporting Bugs</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/features-request.html">Feature Requests</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../contribute-support/how-to-contribute.html">How to contribute ?</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Oju</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">Oju</a></div>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Oju</a></li>
+    <li><a href="using.html">Using Oju</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///home/analyst/Documents/wiki_Oju/docs-site/Oju/./modules/ROOT/pages/using-oju/using.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Using Oju</h1>
+<div class="sect1">
+<h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section provides comprehensive guidance for using Oju in daily cybersecurity operations. Learn how to manage entities, process alerts, configure monitoring, and leverage all platform capabilities for effective security surveillance.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_core_workflows"><a class="anchor" href="#_core_workflows"></a>Core Workflows</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_daily_operations"><a class="anchor" href="#_daily_operations"></a>Daily Operations</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Monitor</strong> security issues through the central dashboard</p>
+</li>
+<li>
+<p><strong>Manage</strong> alerts by updating statuses and coordinating responses</p>
+</li>
+<li>
+<p><strong>Oversee</strong> entity surveillance and platform health</p>
+</li>
+<li>
+<p><strong>Review</strong> audit logs and system activity</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_security_management"><a class="anchor" href="#_security_management"></a>Security Management</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Entity Setup</strong> - Configure organizations and assign focal points</p>
+</li>
+<li>
+<p><strong>Alert Processing</strong> - Triage, investigate, and resolve security incidents</p>
+</li>
+<li>
+<p><strong>Monitoring Configuration</strong> - Adjust scan settings and thresholds</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_user_guide_sections"><a class="anchor" href="#_user_guide_sections"></a>User Guide Sections</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_entity_management"><a class="anchor" href="#_entity_management"></a><a href="entity.html" class="xref page">Entity Management</a></h3>
+<div class="paragraph">
+<p>Complete organization and platform management capabilities.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Organization Setup</strong> - Create and configure monitored entities</p>
+</li>
+<li>
+<p><strong>Platform Management</strong> - Add websites and configure surveillance</p>
+</li>
+<li>
+<p><strong>Focal Points</strong> - Assign responsible contacts per organization</p>
+</li>
+<li>
+<p><strong>Statistics</strong> - Monitor entity-specific security metrics</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_alerts_dashboard"><a class="anchor" href="#_alerts_dashboard"></a><a href="alerts.html" class="xref page">Alerts Dashboard</a></h3>
+<div class="paragraph">
+<p>Centralized security incident monitoring and response.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Dashboard Overview</strong> - Real-time security metrics and visualizations</p>
+</li>
+<li>
+<p><strong>Alert Processing</strong> - Incident triage and status management</p>
+</li>
+<li>
+<p><strong>Filtering &amp; Search</strong> - Advanced alert discovery tools</p>
+</li>
+<li>
+<p><strong>Email Notifications</strong> - Send alerts to stakeholders</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_scan_management"><a class="anchor" href="#_scan_management"></a><a href="scan.html" class="xref page">Scan Management</a></h3>
+<div class="paragraph">
+<p>Automated security monitoring configuration and control.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Scan Configuration</strong> - Adjust monitoring frequency and parameters</p>
+</li>
+<li>
+<p><strong>Scan Types</strong> - SSL, DNS, availability, and defacement detection</p>
+</li>
+<li>
+<p><strong>System Settings</strong> - Proxy configuration and performance tuning</p>
+</li>
+<li>
+<p><strong>Defacement Detection</strong> - Monitor for unauthorized content changes</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_logs_audit_trail"><a class="anchor" href="#_logs_audit_trail"></a><a href="logs-audit.html" class="xref page">Logs &amp; Audit Trail</a></h3>
+<div class="paragraph">
+<p>Complete activity tracking and compliance reporting.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>System Logs</strong> - User actions and system events tracking</p>
+</li>
+<li>
+<p><strong>Email Logs</strong> - Notification delivery monitoring</p>
+</li>
+<li>
+<p><strong>Export Features</strong> - Generate CSV/Excel reports</p>
+</li>
+<li>
+<p><strong>Audit Compliance</strong> - Maintain security audit trails</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_user_management_roles"><a class="anchor" href="#_user_management_roles"></a><a href="user-management.html" class="xref page">User Management &amp; Roles</a></h3>
+<div class="paragraph">
+<p>Access control and permission management system.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>User Administration</strong> - Create and manage user accounts</p>
+</li>
+<li>
+<p><strong>Role Assignment</strong> - Configure granular permissions</p>
+</li>
+<li>
+<p><strong>Access Control</strong> - Secure feature access by user role</p>
+</li>
+<li>
+<p><strong>Permission System</strong> - Fine-grained security controls</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_getting_started"><a class="anchor" href="#_getting_started"></a>Getting Started</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>New to Oju?</strong> Follow this recommended sequence:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong><a href="entity.html" class="xref page">Set up your first entity</a></strong> - Create an organization to monitor</p>
+</li>
+<li>
+<p><strong><a href="entity.html#platforms" class="xref page">Add platforms</a></strong> - Configure websites for surveillance</p>
+</li>
+<li>
+<p><strong><a href="alerts.html" class="xref page">Monitor the dashboard</a></strong> - Watch for security incidents</p>
+</li>
+<li>
+<p><strong><a href="alerts.html#processing" class="xref page">Process alerts</a></strong> - Learn incident response workflow</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Already familiar?</strong> Jump directly to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><a href="scan.html" class="xref page">Scan Management</a></strong> - Fine-tune monitoring configuration</p>
+</li>
+<li>
+<p><strong><a href="logs-audit.html" class="xref page">Logs &amp; Audit Trail</a></strong> - Review system activity</p>
+</li>
+<li>
+<p><strong><a href="user-management.html" class="xref page">User Management</a></strong> - Configure team access</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_user_interface_navigation"><a class="anchor" href="#_user_interface_navigation"></a>User Interface Navigation</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_main_menu_structure"><a class="anchor" href="#_main_menu_structure"></a>Main Menu Structure</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Dashboard</strong> - Central monitoring overview</p>
+</li>
+<li>
+<p><strong>Entities</strong> - Organization and platform management</p>
+</li>
+<li>
+<p><strong>Alerts</strong> - Security issues processing</p>
+</li>
+<li>
+<p><strong>Defacements</strong> - Defacement status tracking</p>
+</li>
+<li>
+<p><strong>Scan</strong> - Monitoring configuration</p>
+</li>
+<li>
+<p><strong>Users</strong> - Access management</p>
+</li>
+<li>
+<p><strong>Logs</strong> - Activity tracking</p>
+</li>
+<li>
+<p><strong>Focal</strong> - Organizational focals point</p>
+</li>
+<li>
+<p><strong>Config</strong> - System settings</p>
+</li>
+<li>
+<p><strong>Vendor</strong> - Antivirus vendors information</p>
+</li>
+<li>
+<p><strong>Carousel</strong> - Entities platforms overview</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_permission_based_access"><a class="anchor" href="#_permission_based_access"></a>Permission-Based Access</h3>
+<div class="paragraph">
+<p>Interface elements appear based on user permissions. Users see only features they&#8217;re authorized to access, ensuring appropriate security boundaries.</p>
+</div>
+<div class="paragraph">
+<p>This user guide provides the knowledge needed to effectively operate Oju for comprehensive cybersecurity monitoring and incident response.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<script id="site-script" src="../_/js/site.js" data-ui-root-path="../_"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 site:
-  title: OJU
+  title: Oju
   start_page: ROOT::index.adoc
 content:
   sources:

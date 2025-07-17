@@ -1,3 +1,3 @@
-# OJU Documentation
+# Oju Documentation
 
 ...

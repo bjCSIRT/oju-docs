@@ -1,0 +1,147 @@
+:imagesdir: ../assets/images
+= User Management & Roles
+:description: Complete user administration and permission management system
+:keywords: users, roles, permissions, authentication, access-control, security
+
+== Overview
+
+User Management & Roles provides comprehensive access control for Oju. Manage user accounts, assign roles with granular permissions, and maintain secure authentication systems to ensure appropriate access levels across your organization.
+
+== User Management
+
+=== Creating Users
+
+**Administrator Process:**
+
+. Navigate to **Users** in main menu
+. Click **Add User**
+. Complete user information:
+   * **Email** - Primary identifier and login
+   * **Username** - Display name
+   * **Full Name** - Complete name
+   * **Password** - Secure password
+   * **Confirm Password** - Password verification
+   * **Role** - Assigned permissions set
+   * **Status** - Active/Inactive account
+. Save to create account
+
+**Required Information:**
+
+* Valid email address (unique)
+* Secure password meeting requirements
+* Role assignment for permissions
+* Account status selection
+
+.Create user
+image::using-oju/create_user.png[]
+
+=== User Registration
+
+**Self-Registration Process:**
+
+. Access registration page
+. Provide required information:
+   * Email address
+   * Username
+   * Full name
+   * Password
+   * Password confirmation
+. Submit registration request
+. Account created in inactive state
+. Administrator activation required
+
+**Account Activation:**
+
+* New accounts inactive by default
+* Administrator review and activation required
+
+.User registration
+image::using-oju/user_registration.png[]
+
+=== User Profile Management
+
+**Profile Updates:**
+
+. Access **Profile** or user settings
+. Update editable information:
+   * Username
+   * Email address
+   * Full name
+   * Current password verification required
+. Save changes to update profile
+
+**Password Changes:**
+
+. Navigate to **Change Password**
+. Provide required information:
+   * Current password
+   * New password
+   * Confirm new password
+. Submit to update password
+. All sessions terminated upon change
+
+=== Account Status Management
+
+**User Status Control:**
+
+* **Active** - Full system access based on role
+* **Inactive** - Access denied, sessions terminated
+
+== Role Management
+
+=== Understanding Roles
+
+**Role Structure:**
+
+* Collection of specific permissions
+* Granular access control
+* Feature-based restrictions
+* Hierarchical permission model
+
+**Built-in Roles:**
+
+* **Super Admin** - Complete system access
+* **Custom Roles** - Organization-specific permissions
+
+=== Creating Roles
+
+**Role Creation Process:**
+
+. Navigate to **Confid > Roles** management
+. Click **Add Role**
+. Define role properties:
+   * **Name** - Descriptive role title
+   * **Description** - Role purpose and scope
+   * **Permissions** - Specific access rights
+. Select appropriate permissions
+. Save to create role
+
+**Permission Selection:**
+
+* Choose from available permissions list
+* Multiple permission assignment
+* Permission validation on save
+
+=== Role Configuration
+
+**Permission Categories:**
+
+* **Dashboard** - Monitoring and statistics access
+* **Entities** - Organization management
+* **Platforms** - Website monitoring control
+* **Alerts** - Incident management
+* **Scans** - Monitoring configuration
+* **Users** - Account administration
+* **Roles** - Permission management
+* **Logs** - Audit trail access
+* **Config** - System configuration
+* **Integrations** - External service management
+
+**Granular Permissions:**
+
+* View, create, edit, delete operations
+* Feature-specific access controls
+* Administrative function restrictions
+* Export and reporting permissions
+
+The User Management & Roles system ensures secure, controlled access to Oju while maintaining operational flexibility and compliance requirements.

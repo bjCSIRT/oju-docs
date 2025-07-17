@@ -1,0 +1,126 @@
+= Key Features
+:description: Core monitoring and analysis capabilities of Oju cybersecurity platform
+:keywords: features, monitoring, alerts, dashboard, entities, free
+
+== Automated Surveillance
+
+=== 24/7 Monitoring
+Continuous monitoring of web platforms with automatic security incident detection. No manual intervention required for threat detection.
+
+=== Multi-type Alert Detection
+Oju monitors 7 categories of security incidents:
+
+* **SSL Problems** - Invalid, expired, or misconfigured certificates
+* **SSL Expires Soon** - Preventive expiration alerts (< 30 days)
+* **Domain Issues** - DNS problems, inaccessible domains
+* **Domain Expires Soon** - Domain expiration warnings
+* **Defacement** - Detection of unauthorized content modifications
+* **Availability Problems** - Inaccessible sites or high response times
+* **VirusTotal Flags** - Sites flagged as malicious
+
+== Detailed Scan Technologies
+
+=== SSL Certificate Monitoring
+
+It provides continuous validation of SSL/TLS certificates across monitored web platforms. The system monitors certificate integrity, expiration dates, and SSL handshake processes while analyzing certificate chains and detecting security issues. Preventive monitoring with early alerts enables organizations to renew certificates before expiration and address security issues proactively.
+
+**How it works:**
+
+* Connects via proxy to target platforms
+* Uses crypto libraries to inspect certificate chains, validity periods, issuer info, and serials
+* Compares expiry dates against thresholds (7, 14, 30 days)
+* Alerts with detailed errors and renewal guidance if validation fails or certificates are nearing expiration
+
+=== Domain Availability Scanning
+
+Domain monitoring tracks registration status, expiration dates, and DNS resolution across multiple DNS servers. Early warning systems prevent business continuity disruptions by alerting organizations before critical domain issues impact services.
+
+**How it works:**
+
+* Performs WHOIS queries to retrieve domain registration information
+* Validates DNS resolution using configured DNS servers with timeout handling
+* Tests multiple DNS servers to ensure resolution redundancy
+* Extracts expiration dates and monitors approaching renewal deadlines
+* Generates alerts for DNS failures, resolution timeouts, or expiration warnings (7, 14, 30 days)
+
+=== Defacement Detection
+
+Compares current website content against a baseline to spot unauthorized changes, suspicious resources, or file anomalies ; crucial to maintain credibility and respond quickly to compromised content.
+
+**How it works:**
+
+* Captures the **HAR** (**H**TTP **AR**chive) of the platform with https://github.com/Lookyloo/Playwrightcapture[Playwrightcapture] based on https://playwright.dev/[Playwright]
+* Builds hierarchical content structure with file sizes and checksums
+* Compares current capture against previous baseline using tree difference analysis
+* Filters changes through whitelisted domains to reduce false positives
+* Analyzes size changes against configurable tolerance thresholds
+* Detects suspicious resource additions from non-whitelisted domains
+* Generates detailed change reports with before/after comparison data
+
+**Oju detects many types of changes:**
+
+* New resource Added
+* Resource removed
+* File moved in the tree
+* Title changed
+* Redirection changed
+* HTTP status changed
+* Content size anomaly
+
+Each of these is linked to its path in the tree, which helps during investigation.
+
+**Reducing false positive**
+
+All changes are not malicious. To avoid false positives, Oju filters:
+
+* Font files and static resources (.woff, .ttf, etc)
+* Legitimate blob URLs
+* Domains whitelisted (CDNs, internal services, etc)
+* Configurable size tolerance (if the size difference is small, it can be ignored) 
+
+=== Website Availability Monitoring
+
+Oju continuously monitors website accessibility, response times, and connection stability to ensure reliable service delivery. It detects timeouts, degraded performance, and HTTP status issues under varying network conditions. This proactive monitoring is critical, as downtime or slow responses can harm business operations, affect user experience, reduce SEO rankings, and signal deeper infrastructure problems.
+
+**How it works:**
+
+* Performs HTTP requests with configurable timeout settings (1000-60000ms)
+* Monitors response codes and identifies 4xx/5xx errors
+* Tests connection stability through multiple proxy servers if configured
+* Measures response times against performance thresholds
+* Handles various connection scenarios (timeouts, SSL errors, proxy failures)
+* Generates alerts for accessibility issues, performance degradation, or service outages
+
+=== VirusTotal Threat Detection
+
+Oju uses VirusTotal’s multi-vendor engine to scan URLs and detect malware, phishing, and other threats. By aggregating results from multiple antivirus vendors, it offers broad threat coverage and enables early detection to protect users and preserve organizational reputation.
+
+**How it works:**
+
+* Submits platform URLs to VirusTotal API for comprehensive analysis
+* Collects results from multiple antivirus engines and security vendors
+* Processes vendor-specific threat classifications and risk assessments
+* Correlates findings with local antivirus vendor database for contact information
+* Generates detailed threat reports with vendor analysis and remediation guidance
+* Automatically resolves alerts when subsequent scans show clean results
+* Supports configurable scan frequencies and API rate limiting
+
+== Advanced Monitoring Features
+
+=== Proxy and Network Support
+
+**Multi-proxy Configuration:**
+
+* Supports HTTP, HTTPS, SOCKS4, and SOCKS5 proxy protocols
+* Automatic proxy rotation for reliability and load distribution
+* Fallback to direct connections when proxies fail
+* Configurable proxy authentication and timeout settings
+
+=== Intelligent Error Handling
+
+**Alert Correlation:**
+
+* Prevents duplicate alerts for the same issues
+* Automatic alert resolution when problems are fixed
+* Contextual information for faster incident response
+* Integration with ticketing systems for workflow automation

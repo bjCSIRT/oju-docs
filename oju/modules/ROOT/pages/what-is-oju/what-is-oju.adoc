@@ -1,0 +1,36 @@
+= What is Oju?
+:description: Overview of Oju cybersecurity monitoring platform
+:keywords: Oju, cybersecurity, monitoring, features, architecture, free
+
+== Overview
+
+Oju is an open-source cybersecurity monitoring tool that provides automated surveillance and threat detection for organizational entities and their web platforms through comprehensive scanning, real-time alerting, and incident response coordination.
+
+== What Does Oju Monitor?
+
+**Entities** : Organizations under surveillance (companies, institutions, etc.)
+
+**Platforms** : Websites associated with each entity
+
+**Security Incidents** : Automatic detection of certains types of platforms security issues
+
+== Types of Monitoring
+
+[cols="1,2"]
+|===
+|Category |Description
+
+|SSL Problems |Invalid/expired certificates
+|Domain Issues |DNS/domain accessibility problems 
+|Defacement |Unauthorized content modifications
+|Availability |Website inaccessibility
+|VirusTotal |Threat detection
+|===
+
+== Monitoring Interface
+
+**Central Dashboard** : Real-time overview with consolidated metrics and visualizations
+
+**Entity Management** : Organized surveillance assets by organization structure
+
+**Alert System** : Workflow and alert tracking
