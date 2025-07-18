@@ -28,9 +28,8 @@ Entity Management is central to Oju monitoring operations. An entity defines an 
    * **Focal Points** - Select responsible contacts
 . Click **Submit** to create
 
-====
-TIP: Before creating an entity, make sure to create at least one Focal Point. Entities require at least one associated contact to be submitted.
-====
+[TIP]
+Before creating an entity, make sure to create at least one Focal Point. Entities require at least one associated contact to be submitted.
 
 === Entity Configuration
 
