@@ -8,7 +8,7 @@
 Continuous monitoring of web platforms with automatic security incident detection. No manual intervention required for threat detection.
 
 === Multi-type Alert Detection
-Oju monitors 7 categories of security incidents:
+Oju monitors 7 categories of security issues:
 
 * **SSL Problems** - Invalid, expired, or misconfigured certificates
 * **SSL Expires Soon** - Preventive expiration alerts (< 30 days)
