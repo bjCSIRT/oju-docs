@@ -1,5 +1,5 @@
-name: ROOT
-version: 
+name: oju
+version: ~
 title: Oju
 nav:
 - modules/ROOT/nav.adoc
