@@ -19,7 +19,7 @@ VirusTotal integration provides automated threat detection for monitored platfor
 
 **Configuration Steps:**
 
-. Navigate to **Config > Integration** and click **VirusTotal's configure button (https://Oju.example.com/config/integrations)**
+. Navigate to **Config > Integration** and click **VirusTotal's configure button (https://oju.example.com/config/integrations)**
 . Enter valid VirusTotal API key
 . Select desired scan frequency
 . Activate integration
