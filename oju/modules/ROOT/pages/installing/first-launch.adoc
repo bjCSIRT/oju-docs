@@ -48,7 +48,7 @@ image::installing/oju_interface.png[]
 3. Management menu should be visible
 
 .Django interface
-image::installing/cap3.png[]
+image::installing/django_interface.png[]
 
 == Backup Configuration
 
