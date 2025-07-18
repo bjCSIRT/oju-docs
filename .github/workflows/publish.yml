@@ -15,15 +15,25 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
+
     steps:
     - uses: actions/checkout@v4
+
     - uses: actions/setup-node@v4
       with:
         node-version: '18'
-    - run: npm install -g @antora/cli @antora/site-generator-default
-    - run: npx antora antora-playbook.yml
-    - uses: actions/upload-pages-artifact@v3
+
+    - name: Install Antora
+      run: npm install @antora/cli @antora/site-generator-default
+
+    - name: Build Site with Antora
+      run: npx antora --generator @antora/site-generator-default antora-playbook.yml
+
+    - name: Upload Pages Artifact
+      uses: actions/upload-pages-artifact@v3
       with:
         path: public
-    - id: deployment
+
+    - name: Deploy to GitHub Pages
+      id: deployment
       uses: actions/deploy-pages@v4
