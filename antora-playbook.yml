@@ -3,9 +3,10 @@ site:
   start_page: oju::index.adoc
 content:
   sources:
-  - url: ./oju
-    start_path: .
+  - url: .
     branches: HEAD
+    start_path: oju
+    
 ui:
   bundle:
     url: ./ui-bundle.zip
