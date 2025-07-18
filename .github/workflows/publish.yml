@@ -27,7 +27,7 @@ jobs:
       run: npm cache clean --force
 
     - name: Install Antora
-      run: npm install @antora/cli @antora/site-generator-default --prefer-online
+      run: npm install @antora/cli @antora/site-generator-default --prefer-online --no-package-lock
 
 
     - name: Build Site with Antora
