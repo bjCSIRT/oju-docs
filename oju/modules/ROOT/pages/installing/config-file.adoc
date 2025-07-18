@@ -46,9 +46,9 @@ CERTBOT_EMAIL=your-email@domain.com
 NODE_ENV=production
 
 # SSL Certificate Information
-SSL_COUNTRY=US
-SSL_STATE=California
-SSL_CITY=San Francisco
+SSL_COUNTRY=BJ
+SSL_STATE=Littoral
+SSL_CITY=Cotonou
 SSL_ORG=Your Organization
 SSL_ORG_UNIT=IT Department
 ----
