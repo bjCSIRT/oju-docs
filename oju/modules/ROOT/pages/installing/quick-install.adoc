@@ -142,6 +142,7 @@ https://yourdomain.com/admin
 ```
 
 === Generated Files
+
 * **`.env`** : Complete environment configuration
 * **`nginx/ssl/`** : SSL certificates (if self-signed)
 * **Docker Volumes** : Persistent service data
@@ -160,6 +161,7 @@ https://yourdomain.com/admin
 Continue anyway? (y/N): 
 ```
 **Solutions** :
+
 * Stop services using these ports
 * Choose to continue (may cause conflicts)
 
@@ -168,6 +170,7 @@ Continue anyway? (y/N):
 [WARNING] Failed to obtain Let's Encrypt certificate. Self-signed certificates will be used.
 ```
 **Possible Causes** :
+
 * DNS not configured correctly
 * Domain inaccessible from Internet  
 * Let's Encrypt rate limits reached
