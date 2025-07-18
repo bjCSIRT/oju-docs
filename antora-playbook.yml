@@ -1,6 +1,6 @@
 site:
   title: Oju
-  start_page: oju::index.adoc
+  start_page: ROOT::index.adoc
 content:
   sources:
   - url: .
