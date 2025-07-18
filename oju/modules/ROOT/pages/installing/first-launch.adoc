@@ -36,7 +36,7 @@ docker-compose ps
 2. Login page should display correctly
 
 .Oju interface
-image::installing/cap2.png[]
+image::installing/oju_interface.png[]
 
 === Django Admin Interface
 **URL** : `https://yourdomain.com/admin`
