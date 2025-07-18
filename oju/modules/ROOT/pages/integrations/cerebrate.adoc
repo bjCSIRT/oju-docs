@@ -19,7 +19,7 @@ Cerebrate integration provides automated organizational data synchronization bet
 
 **Configuration Steps:**
 
-. Navigate to **Config > Integration** and click **Cerebrate's configure button (https://Oju.example.com/config/integrations)**
+. Navigate to **Config > Integration** and click **Cerebrate's configure button (https://oju.example.com/config/integrations)**
 . Enter Cerebrate API Key
 . Configure synchronization frequency
 . Test API connectivity
