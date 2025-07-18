@@ -23,8 +23,12 @@ jobs:
       with:
         node-version: '18'
 
+    - name: Clean npm cache
+      run: npm cache clean --force
+
     - name: Install Antora
-      run: npm install @antora/cli @antora/site-generator-default
+      run: npm install @antora/cli @antora/site-generator-default --prefer-online
+
 
     - name: Build Site with Antora
       run: npx antora --generator @antora/site-generator-default antora-playbook.yml
