@@ -19,7 +19,7 @@ RTIR (Request Tracker for Incident Response) integration automates incident tick
 
 **Configuration Steps:**
 
-. Navigate to **Config > Integration** and click **RTIR's configure button (https://Oju.example.com/config/integrations)**
+. Navigate to **Config > Integration** and click **RTIR's configure button (https://oju.example.com/config/integrations)**
 . Enter RTIR server connection details
 . Save configuration
 . Activate integration
