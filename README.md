@@ -60,6 +60,7 @@ Oju provides automated surveillance and threat detection for organizational enti
 git clone https://github.com/bjCSIRT/oju.git
 cd oju
 ./install.sh # for linux system
+```
 
 ---
 
