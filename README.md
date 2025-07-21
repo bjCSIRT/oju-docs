@@ -1,79 +1,78 @@
-# Oju – Cybersecurity Monitoring Platform
+# Oju
 
-Oju is an open-source cybersecurity monitoring platform for organizations and web platforms. It provides automated surveillance, threat detection, and alert management through real-time scanning, entity management, and integration with threat intelligence tools.
+**Open-source cybersecurity monitoring platform.**
 
----
-
-## Table of Contents
-
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Integrations](#integrations)
-- [Support](#support)
-
----
-
-## Project Overview
-
-Oju provides automated surveillance and threat detection for organizational entities and their websites through comprehensive scanning, real-time alerting, and incident response coordination. It helps security teams proactively monitor infrastructure and respond to incidents.
-
----
+Oju provides automated surveillance and threat detection for organizational entities and their websites through comprehensive scanning, real-time alerting, and incident response coordination.
 
 ## Features
 
-- **Multi-Platform Monitoring** – Monitor SSL, domains, website defacements, and availability.
-- **Entity Management** – Organize platforms under organizational units with focal points.
-- **Real-Time Dashboard** – View alerts, platform statuses, and global trends in one place.
-- **Automated Alerting** – Trigger notifications and ticketing when issues arise.
-- **Incident Response** – Integrated with RTIR for automated ticket creation.
-- **Threat Intelligence** – Leverages VirusTotal for malware and URL analysis.
+- **Multi-Platform Monitoring**: SSL certificates, domain security, website defacement, availability
+- **Entity Management**: Organize monitoring by organizations and their platforms  
+- **Real-Time Dashboard**: Centralized security metrics and alert visualization
+- **Automated Alerting**: Notification system with focal point management
+- **Incident Response**: RTIR integration for automated ticket creation
+- **Threat Intelligence**: VirusTotal integration for threat detection
 
----
+## Quick Install
 
-## Technologies Used
-
-- **Django** – Backend and REST API
-- **Vue.js** – Frontend interface
-- **PostgreSQL** – Data storage
-- **Redis** – Caching and background queue
-- **Celery** – Distributed task execution
-- **Nginx** – Web server and HTTPS reverse proxy
-- **Docker / Docker Compose** – Deployment and service orchestration
-
----
-
-## Installation
-
-### Step 1: Install Prerequisites
-
-- Docker Engine `v20.10+`
-- Docker Compose `v1.29+`
+### Prerequisites
+- Docker Engine 20.10+ and Docker Compose 1.29+
 - 2GB RAM (4GB recommended)
 - 40GB disk space
-- Ports `80` and `443` must be available
+- Ports 80 and 443 available
 
-### Step 2: Install Oju
-
+### Installation
 ```bash
+
+# Clone and install manually
 git clone https://github.com/bjCSIRT/oju.git
 cd oju
-./install.sh # for linux system
+
+# on linux based system
+./install.sh
+
+# or on windows
+.\install.ps1
 ```
 
----
+### Access
+- **Web Interface**: https://your-domain.com
+- **Default Login**: Configure during installation
+
+## Architecture
+
+**Stack**: Django + Vue.js + PostgreSQL + Redis + Celery + Nginx
+
+**Services**:
+- Django backend with REST API
+- Vue.js frontend interface  
+- PostgreSQL database
+- Redis caching and task queue
+- Celery workers for monitoring
+- Nginx reverse proxy with SSL
+
+## Monitoring Types
+
+| Category | Description |
+|----------|-------------|
+| **SSL Problems** | Invalid/expired certificates |
+| **Domain Issues** | DNS/domain accessibility problems |
+| **Defacement** | Unauthorized content modifications |
+| **Availability** | Website inaccessibility |
+| **VirusTotal** | Threat detection and analysis |
 
 ## Integrations
 
-- RTIR : Automated incident response ticketing
-- VirusTotal : Threat detection and scanning
-- Cerebrate : Organizational data synchronization
-
----
+- **RTIR**: Automated incident response ticketing
+- **VirusTotal**: Threat detection and malware scanning
+- **Cerebrate**: Organizational data synchronization
 
 ## Support
 
-- Issues : GitHub Issues
-- Contact : bjcsirt@asin.bj
-- Documentation : https://bjcsirt.github.io/oju
+- **Issues**: GitHub Issues
+- **Contact**: bjcsirt@asin.bj
+- **Documentation**: [Oju DOCS](https://bjcsirt.github.io/oju-docs/)
+
+## License
+
+Open-source project - see LICENSE file for details.
