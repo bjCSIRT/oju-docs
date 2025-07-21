@@ -73,9 +73,10 @@ Compares current website content against a baseline to spot unauthorized changes
 Each of these is linked to its path in the tree, which helps during investigation.
 
 [TIP]
-
+====
 * To prevent false positive defacement alerts, add domains with legitimate content changes to the whitelist domain list. This is particularly useful for frequently updated websites or dynamic content platforms.
 * Increase the acceptance rate threshold to reduce alerts triggered by minor resource size changes. This helps filter out false positives from dynamic content, ads, or minor page updates.
+====
 
 **Reducing false positive**
 
