@@ -77,5 +77,3 @@ cd oju
 - Issues : GitHub Issues
 - Contact : bjcsirt@asin.bj
 - Documentation : https://bjcsirt.github.io/oju
-
----
