@@ -67,9 +67,9 @@ cd oju
 
 ## Integrations
 
-- **RTIR**: Automated incident response ticketing
-- **VirusTotal**: Threat detection and malware scanning
-- **Cerebrate**: Organizational data synchronization
+- RTIR : Automated incident response ticketing
+- VirusTotal : Threat detection and scanning
+- Cerebrate : Organizational data synchronization
 
 ---
 
