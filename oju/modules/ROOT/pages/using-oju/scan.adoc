@@ -37,9 +37,6 @@ image::using-oju/ssl_scan.png[]
 .Domain scan
 image::using-oju/domain_scan.png[]
 
-[TIP]
-To reduce false positives in DNS scanning, configure at least one DNS resolver server (e.g., 8.8.8.8, 1.1.1.1). This provides fallback resolution when the primary WHOIS scan fails.
-
 === Defacement Detection
 
 **Purpose:** Detect unauthorized website content changes
@@ -52,9 +49,6 @@ To reduce false positives in DNS scanning, configure at least one DNS resolver s
 .Defacement scan
 image::using-oju/defacement_capture.png[]
 
-[TIP]
-To prevent false positive defacement alerts, add domains with legitimate content changes to the whitelist domain list. This is particularly useful for frequently updated websites or dynamic content platforms.
-
 === Website Availability Monitoring
 
 **Purpose:** Monitor website accessibility
@@ -65,9 +59,6 @@ To prevent false positive defacement alerts, add domains with legitimate content
 
 .Website scan
 image::using-oju/website_scan.png[]
-
-[TIP]
-Increase the scan timeout to 30 seconds in the scan configuration to reduce false positive alerts caused by slow server responses or network latency.
 
 == Scan Configuration
 
