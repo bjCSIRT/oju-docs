@@ -10,22 +10,14 @@ Oju is an open-source cybersecurity monitoring platform for organizations and we
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Setup and Usage](#setup-and-usage)
-  - [Step 1: Install Prerequisites](#step-1-install-prerequisites)
-  - [Step 2: Install Cerberus](#step-2-install-cerberus)
-  - [Step 3: Access the Platform](#step-3-access-the-platform)
-- [Architecture](#architecture)
-- [Monitoring Capabilities](#monitoring-capabilities)
 - [Integrations](#integrations)
-- [Documentation](#documentation)
-- [How to Contribute](#how-to-contribute)
-- [License](#license)
+- [Support](#support)
 
 ---
 
 ## Project Overview
 
-Cerberus provides automated surveillance and threat detection for organizational entities and their websites through comprehensive scanning, real-time alerting, and incident response coordination. It helps security teams proactively monitor infrastructure and respond to incidents.
+Oju provides automated surveillance and threat detection for organizational entities and their websites through comprehensive scanning, real-time alerting, and incident response coordination. It helps security teams proactively monitor infrastructure and respond to incidents.
 
 ---
 
@@ -64,14 +56,27 @@ Cerberus provides automated surveillance and threat detection for organizational
 
 ---
 
-### Step 2: Install Cerberus
+### Step 2: Install Oju
 
 ```bash
-# Option 1: Run the automated installer
-curl -sSL https://oju.example.com | bash
-
-# Option 2: Manual install via Git
 git clone https://github.com/bjCSIRT/oju.git
 cd oju
 ./install.sh # for linux system
 
+---
+
+## Integrations
+
+- **RTIR**: Automated incident response ticketing
+- **VirusTotal**: Threat detection and malware scanning
+- **Cerebrate**: Organizational data synchronization
+
+---
+
+## Support
+
+- Issues : GitHub Issues
+- Contact : bjcsirt@asin.bj
+- Documentation : https://bjcsirt.github.io/oju
+
+---
