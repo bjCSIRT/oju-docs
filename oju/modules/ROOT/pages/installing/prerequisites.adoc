@@ -14,7 +14,7 @@
 |4 GB (production environments)
 
 |**Storage**
-|10 GB free space
+|40 GB free space
 |20 GB (with logs and backups)
 
 |**Processor**
