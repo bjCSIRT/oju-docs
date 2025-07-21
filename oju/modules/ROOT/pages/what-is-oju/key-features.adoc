@@ -43,6 +43,9 @@ Domain monitoring tracks registration status, expiration dates, and DNS resoluti
 * Extracts expiration dates and monitors approaching renewal deadlines
 * Generates alerts for DNS failures, resolution timeouts, or expiration warnings (7, 14, 30 days)
 
+[TIP]
+To reduce false positives in DNS scanning, configure at least one DNS resolver server (e.g., 8.8.8.8, 1.1.1.1). This provides fallback resolution when the primary WHOIS scan fails.
+
 === Defacement Detection
 
 Compares current website content against a baseline to spot unauthorized changes, suspicious resources, or file anomalies ; crucial to maintain credibility and respond quickly to compromised content.
@@ -69,6 +72,11 @@ Compares current website content against a baseline to spot unauthorized changes
 
 Each of these is linked to its path in the tree, which helps during investigation.
 
+[TIP]
+
+* To prevent false positive defacement alerts, add domains with legitimate content changes to the whitelist domain list. This is particularly useful for frequently updated websites or dynamic content platforms.
+* Increase the acceptance rate threshold to reduce alerts triggered by minor resource size changes. This helps filter out false positives from dynamic content, ads, or minor page updates.
+
 **Reducing false positive**
 
 All changes are not malicious. To avoid false positives, Oju filters:
@@ -90,6 +98,9 @@ Oju continuously monitors website accessibility, response times, and connection 
 * Measures response times against performance thresholds
 * Handles various connection scenarios (timeouts, SSL errors, proxy failures)
 * Generates alerts for accessibility issues, performance degradation, or service outages
+
+[TIP]
+Increase the scan timeout to 30 seconds in the scan configuration to reduce false positive alerts caused by slow server responses or network latency.
 
 === VirusTotal Threat Detection
 
