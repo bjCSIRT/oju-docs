@@ -72,7 +72,3 @@ cd oju
 - **Issues**: GitHub Issues
 - **Contact**: bjcsirt@asin.bj
 - **Documentation**: [Oju DOCS](https://bjcsirt.github.io/oju-docs/)
-
-## License
-
-Open-source project - see LICENSE file for details.
