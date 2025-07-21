@@ -54,8 +54,6 @@ Oju provides automated surveillance and threat detection for organizational enti
 - 40GB disk space
 - Ports `80` and `443` must be available
 
----
-
 ### Step 2: Install Oju
 
 ```bash
