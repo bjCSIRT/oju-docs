@@ -12,7 +12,7 @@ The automated installation script handles complete Oju deployment. It configures
 [source,bash]
 ----
 # Clone the repository
-git clone https://github.com/bjCSIRT-ASIN/oju.git
+git clone https://github.com/bjCSIRT/oju.git
 cd oju
 
 # Verify installation script
